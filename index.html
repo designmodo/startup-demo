@@ -1,1 +1,255 @@
-Hellow, world!
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Demo version of Startup Framework</title>
+		<style>
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
+            article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+            body{line-height:1}
+            ol,ul{list-style:none}
+            blockquote,q{quotes:none}
+            blockquote:before,blockquote:after,q:before,q:after{content:none}
+            table{border-collapse:collapse;border-spacing:0}
+            html {position:static!important;top:0!important;}
+            body {font-family: 'Helvetica Neue', Helvetica, Arial, serif;cursor:default;}
+            
+            * { box-sizing:border-box;-webkit-transition: 0.5s ease;-moz-transition: 0.5s;-ms-transition: 0.5s;-o-transition: 0.5s;transition: 0.5s;}
+            
+            h1 {font-size: 35px; font-weight: bold; margin-bottom: 70px; letter-spacing: -1px; color: #1b1f23;line-height: 45px;}
+            h2 {font-size: 28px; font-weight: bold; margin-bottom: 70px; letter-spacing: -1px; color: #303336; line-height:40px;}
+            h4 {font-size: 20px; font-weight: bold; margin-bottom: 27px; letter-spacing: -1px; color: #1b1f23}
+            
+            .menu {padding:88px 20px 0; width: 100%; max-width: 940px; margin: 0 auto;}
+            .back {display: inline-block; float: right; font-size: 18px; border: 2px solid #f3f4f5; border-radius: 6px; text-decoration: none; color: black; padding:15px 22px; letter-spacing:0px}
+            .back:hover {background-color: #1b1f23; border: 2px solid #1b1f23; color: white; cursor:pointer} 
+            .back img{padding-right: 22px}
+            .back b {font-weight:bold;-webkit-transition: none;-moz-transition: none;-ms-transition: none;-o-transition: none;transition: none;}
+
+            .overview {max-width: 800px; margin: 0 auto;padding: 130px 20px;}
+            .samples {max-width: 800px; margin: 0 auto; padding: 130px 20px}
+            .gray-wrapper {background-color: #f2f2f1;}
+            .components {max-width: 800px; margin: 0 auto; padding: 130px 20px;}
+			 .samples li:last-child { height:422px;}
+            .cc {max-width: 800px; margin: 0 auto; padding: 130px 0;text-align:center;}
+            .cc img {margin-bottom:45px; }
+			
+            .logo {display: inline-block; margin-top:16px;}
+            .article-content {line-height: 36px; font-size: 20px; color: #7f8c8d}
+            .features {padding-top: 45px;}
+            .features img {padding-bottom: 44px;width:100%;}
+            .features li {width: 230px;display: inline-block;margin-right: 18px;padding:23px 19px;position: relative;left: -23px;border:4px solid rgba(191,191,186,0);vertical-align: top;}
+            .features li:hover {border-color:rgba(191,191,186,0.25);}
+            .features li:last-child {margin-right:0;}
+            .features p {font-size: 16px; line-height: 26px; color:#696f6f;margin-bottom: 7px;}
+            .features a {line-height: 32px; color:#1b1f23; text-decoration:none;border-bottom:1px solid #cbcbcb;}
+            .features a:hover { color:#35d0b5 }
+			
+            .grab a {display:block;background-color:#35d0b5; padding: 46px;font-weight:200;font-size: 40px; color: white; text-decoration:none; letter-spacing:-1px;text-align:center;}
+            .grab strong { font-weight:700;}
+            .grab a:hover {background-color: #e74c3c;}
+            
+            .footer { font-size:14px;color:#696f6f;padding:75px 0; text-align:center; max-width:940px; margin: 0 auto;line-height:26px;}
+            .footer a {color:#1b1f23; text-decoration:none;border-bottom:1px solid #cbcbcb;}
+			 .footer a:hover { color:#35d0b5;}
+			
+			 @media screen and (max-width: 840px) {
+			 	.features li {
+					left:0;
+					padding:23px 0;
+					border-width:0px;
+					margin-right:14px;
+			 	}
+				.samples li:last-child {height:auto;}
+				.samples, .components, .images, .cc { 
+					padding: 85px 20px;
+				}
+				h1 { 
+					margin-bottom: 50px;
+				}
+			 }
+			 
+			 @media screen and (max-width: 768px) {
+				 .features li {
+					width: 32%;	
+					margin:0 0 75px;
+					padding:23px 10px 0 0;
+				}
+				.features li:last-child { margin:0;}
+				 
+			 }
+			 
+			 @media screen and (max-width: 568px) {
+				 
+				.samples, .overview, .components, .images, .cc { 
+					padding: 50px 20px;
+				}
+				.menu { 
+					
+				} 
+				h1 { 
+					margin-bottom: 30px;
+				}
+				h2 {
+					font-size: 24px;
+					margin-bottom: 47px;
+					line-height: 35px;
+				}
+			 }
+			 
+			 @media screen and (max-width: 480px) {
+				 .features li { 
+				 	display:block;
+					width:100%;
+				 }
+				 .features img { 
+				 	width:auto;
+				 }
+				 
+				 .menu { 
+					padding: 0;
+					text-align: center;
+				 }
+				 .logo { padding: 40px 20px; }
+				 .back {
+					display: block;
+					float: none;
+					border-radius:0;
+					border-right-width:0; border-left-width:0px;border-top-width:0px;
+				 }
+				 
+			 	.shares iframe { display:block;margin: 15px auto;}
+			 }
+			 
+			 @media screen and (max-width: 320px) {
+			 }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="menu">
+            
+                <a href="http://designmodo.com/startup" class="back"><img src="img/arrow-left.png">Back to the <b>Presentation</b></a>
+                <div class="logo">
+                    <a href="http://designmodo.com"><img src="img/logo.png"></a>
+                </div>
+           </div>
+           
+           <div class="content">
+                <div class="overview">
+                  <h1>Demo Version of Startup Framework</h1>
+                  <p class="article-content">We have created this demo version in order to show you the structure of Startup Framework. It has some of the components from the full version, 2 great samples and documentation. You can also find 2 images of a Macbook and an iPad, which you can use in your project. We hope you will like your first introduction to Startup Framework.
+</p>
+                  <ul class="features">
+                       <li>
+                            <img src="img/overview-2.png">
+                          <h4>Eleven Components</h4>
+                          <p>Each component is coded for web which will sufficiently fasten the process of creating a website.</p>
+                       </li>
+                        <li>
+                            <img src="img/overview-1.png">
+                          <h4>Two Samples</h4>
+                          <p>Samples will guide you how to play around using the UI Kit components in the website building process. </p>
+                      </li>
+                      <li>
+                            <img src="img/overview-3.png">
+                          <h4>Two Images</h4>
+                          <p>When you have to show your application or website on iPhone, iPad or Macbook you can use these images.
+</p>
+                      </li>
+                  </ul>
+               </div>
+               
+               <div class="gray-wrapper">
+                   <div class="samples">
+                        <h1>Samples</h1>
+                      <p class="article-content">The most important part of the Startup Framework is the samples. The samples consist a set of few pages you can use as is or add new blocks from UI Kit. By choosing one of the 2 configurations of the future startup, the process of creation is simple and easy. You can decide whether to create your site using UI Kit components or samples.</p>
+                      <ul class="features">
+                            <li>
+                              <img src="img/samples-1.png">
+                              <h4>Sample #3</h4>
+                              <p>Clean sample with a video block, a sign-up form and price table.</p>
+                              <a href="samples/sample-03/index.html">Live Version</a>
+                          </li>
+                          <li>
+                              <img src="img/samples-2.png">
+                              <h4>Sample #4</h4>
+                              <p>A universal sample, which meets the needs of many startups.</p>
+                              <a href="samples/sample-04/index.html">Live Version</a>
+                          </li>
+                          <li>
+                              <img src="img/samples-3.png">
+                              <h4>Showcase</h4>
+                              <p>We like how these guys used Sample #4 for their website.</p>
+                              <a href="">HipstaFood.com</a>
+                          </li>
+                      </ul>
+                   </div>
+               </div>
+               
+    
+                   <div class="components">
+                        <h1>Components</h1>
+                      <p class="article-content">Startup Design Framework contains components and complex blocks which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                      <ul class="features">
+                            <li>
+                              <img src="img/components-1.png">
+                              <h4>Eleven Components</h4>
+                              <p>Eleven components like headers, footers, content blocks and a price table.</p>
+                          </li>
+                          <li>
+                              <img src="img/components-2.png">
+                              <h4>User Guide</h4>
+                              <p>You’ll get a description of each component and learn how to use them.</p>
+                          </li>
+                      </ul>
+                   </div>
+                   
+                 <div class="gray-wrapper">
+                   <div class="samples">
+                        <h1>Images</h1>
+                      <p class="article-content">We prepared some high-quality photos, that you can use in your projects. When you have to show your application or website on iPhone, iPad or Macbook you can use these images.
+Just put your image of your app inside Smart Layer.</p>
+                      <ul class="features">
+                            <li>
+                              <img src="img/images-2.png">
+                              <h4>Macbook</h4>
+                              <p>You can place your image in a laptop window or on a moleskine page.</p>
+                              <a href="img/macbook_1200.jpg" target="_blank">Look at the photo</a>
+                          </li>
+                          <li>
+                              <img src="img/overview-3.png">
+                              <h4>iPad in the Hands</h4>
+                              <p>You most probably will need a photo with an iPad ;)</p>
+                              <a href="img/ipad_1200.jpg" target="_blank">Look at the photo</a>
+                          </li>
+                      </ul>
+                   </div>
+               </div>
+               
+				<div class="cc">
+                	<img src="img/cc.png"/>
+					<h2>This demo is licensed under a CC 3.0. You are allowed to use these components anywhere you want, however we’ll highly appreciate if you will link to our website.</h2>
+                    <div class="shares">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="monstercritic" data-size="large">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                  	<iframe src="http://ghbtns.com/github-btn.html?user=designmodo&repo=startup&type=watch&count=true&size=large" frameborder="0" scrolling="0" style="width: 103px;height: 30px;" allowTransparency="true"></iframe>
+                  	<iframe src="http://ghbtns.com/github-btn.html?user=designmodo&repo=startup&type=fork&count=true&size=large" frameborder="0" scrolling="0" style="width: 100px;height: 30px;" allowTransparency="true"></iframe>
+                    </div>
+				</div>
+                
+                
+               <div class="grab">
+                <a href="#"><strong>Download demo</strong> for free</a>
+               </div>
+    
+    
+    			<div class="footer">
+                <p>Copyright © <a href="http://designmodo.com/">Designmodo</a>. All Rights Reserved.</p>
+                <p>Presentation of <a href="http://designmodo.com/startup/">Startup Framework</a>.</p>
+				</div>
+               
+            </div>
+        </div>
+    </body>
+</html>
