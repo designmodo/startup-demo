@@ -2895,12 +2895,11 @@ body {
 }
 .manual-pages .container a {
   border-bottom: 1px solid #d6d6d7;
-  font-size: 20px;
   font-weight: normal;
   color: #1b1f23;
   text-decoration: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 .manual-pages .container a:hover {
   border-bottom: 0 none;
@@ -2943,14 +2942,14 @@ body {
   padding-left: 30px;
 }
 .faq .question .answer {
-  border: 1px solid #ffeeee;
-  display: none;
-  padding: 20px 50px;
-  background-color: white;
-  margin-bottom: 49px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+	border: 1px solid #E9E9E9;
+	display: none;
+	padding: 20px 22px 5px;
+	background-color: white;
+	margin: 20px 30px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 10px;
+	border-radius: 0;
 }
 .faq .question .answer p {
   font-size: 14px;
