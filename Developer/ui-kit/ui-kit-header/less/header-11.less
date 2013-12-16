@@ -1,0 +1,152 @@
+/**
+ * Header 11 stylesheet  
+ * */
+.header-11-startup-antiflicker{
+    border-bottom:1px @silver solid;
+}
+.header-11{
+  z-index: 100;
+  width: 100%;
+  padding-top:0;
+  padding-bottom:0;
+  height:90px;
+    .navbar {
+      position: absolute;
+      z-index: 2; top: 0;
+      margin: 0;
+      font-family: @h-font-family;
+      &.navbar-fixed-top{
+        position:fixed;
+        margin:0 auto;
+        top:0 !important;
+      }
+      .navbar-form,.navbar-search {  margin: 0;  padding: 26px 0 19px 30px;}
+      .btn,.btn-group { margin-top: -1px;}
+      .btn {padding-left: 18px; padding-right: 18px;}
+      .btn.btn-primary {.btn-background(@button-primary-active);}
+      .navbar-inner {background: none;}
+      .brand {
+        padding-left: 0;  
+        padding-top: 30px;  
+        .font(25px, @base);
+        font-weight: 600;
+          img:first-child {
+          float: left;
+          margin: -10px 15px 0 0;
+        }
+      }
+      .nav {
+        > li {
+          margin-left: 25px;
+          &:first-child {margin-left: 0;}
+          &:active a, &.active a{.a-color(@link-color, @link-color);}
+          > a {padding: 35px 0 27px; .font(14px);
+            font-weight: 500;
+            letter-spacing: 1px;
+            .a-color(inherit, @link-color);            
+          }
+        }
+      }
+      .btn-navbar {
+        margin: 28px 0 17px;
+        padding: 0;
+        .border-radius(0);
+        border: 0;
+        background: none!important;
+      }
+      @media (max-width: 979px) {
+        .nav-collapse {
+           padding-top: 28px;
+           .navbar-collapse;
+        }
+      }
+  }
+}
+.header-11-sub{
+  padding-top:110px;
+  padding-bottom:110px;  
+  color: @silver;
+  position: relative;
+  h3 {.font(33px,white); margin-bottom:15px;  font-family: @h-font-family; font-weight:300;}
+  p {.font(16px, @silver); font-family: @c-font-family;}
+  .additional-links {
+    .opacity(50);
+    .font(12px, @silver);
+    a {text-decoration: underline; .a-color(@silver);}
+  }
+  @media (max-width: 767px) { 
+    padding-top:68px;
+    padding-bottom:70px;
+    .player{
+      margin: 40px 0 45px;
+    }
+  }
+  @media (max-width: 480px) {
+    padding-top:68px;
+    padding-bottom:70px;
+    h3 { .font(26px, white);}
+    .player{
+      margin: 40px 0 45px;
+    }
+  }  
+  .signup-form {
+      form {
+        font-family:@c-font-family;
+        margin-top: 40px;  
+        .controls-row:first-child + .controls-row {
+          display: table;
+          width: 100%;  
+          > div {
+            display: table-cell;
+            width: 50%;
+            padding-left: 5px;  
+            @media (max-width: 767px) {padding-left: 9px;}  
+            &:first-child {
+              padding-left: 0; padding-right: 5px;  
+              @media (max-width: 767px) {padding-right: 9px;}
+            }
+          }  
+          input {
+            width: 100%; height: 41px;
+            .box-sizing(border-box);         
+          }
+        }  
+        .btn {
+          padding-top:11px; padding-bottom:11px;
+          @media (max-width: 767px) { margin: 9px 0; }  
+          &.btn-info {
+            &:hover,&:focus {background-color: @button-primary-active;}  
+            &:active,&.active {background-color: mix(@button-primary-active, black, 85%);}
+          }
+        }  
+        input[type="text"], input[type="password"] { 
+            border-color: white!important;
+            @media (max-width: 767px) {height: 41px;}
+        }
+      }
+      @media (max-width: 480px) {form {margin-top: 25px;}}
+  }
+  .player {
+    .border-radius(6px);
+    background: @silver;
+    position: relative;
+    overflow: hidden;
+    height: 360px;
+    .btn-play {
+      .box-sizing(border-box);
+      position: absolute;
+      left: 10px; bottom: 10px;
+      width: 60px;
+      padding-left: 16px;
+      .border-radius(3px);
+      &.btn-primary {.btn-background(@button-primary-active);}
+    }
+    > iframe {
+      width: 100%; height: 100%;
+      border: 0;
+      display: block;
+    }
+    @media (max-width: 480px) { height: 160px;}
+  }
+
+}

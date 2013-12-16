@@ -1,0 +1,108 @@
+/**
+ * Header 10 stylesheet  
+ * */
+.header-10{
+  z-index: 100;
+  width: 100%;
+  padding-top:0;
+  padding-bottom:0;
+  height:80px;
+  background: #233240;
+  color: white;
+  .navbar {
+    position: absolute;
+    z-index: 2; top: 0;
+    margin: 0;
+    &.navbar-fixed-top{
+      position:fixed;
+      margin:0 auto;
+      top:0 !important;
+    }
+    .navbar-form, .navbar-search {
+      margin: 0;
+      padding: 20px 0 19px 60px;
+    }
+    .btn,.btn-group { margin-top: -1px; }
+    .btn {
+      padding-left: 26px; padding-right: 26px;    
+      &.btn-primary {.font(15px, white); font-weight:500;}
+    }
+    .navbar-inner { background: none; }
+    .brand {
+      padding-left: 0;  padding-top: 25px;
+      .font(25px, white); font-family: @h-font-family;
+      font-weight: 600;      
+      img:first-child {float: left; margin: -10px 15px 0 0; }
+    }
+    .nav {
+      > li {
+        margin-left: 30px;
+        &:first-child {margin-left: 0;}
+        > a {
+          padding: 29px 0 27px;
+          .font(17px); font-weight:600;
+          .a-color(white, @silver);
+        }
+        &.active > a {.a-color(@silver, @silver);}
+      }
+    }    // "icon only" style
+    .btn-navbar {
+      margin: 27px 0 17px;
+      padding: 0;
+      .border-radius(0);
+      border: 0;
+      background: none!important;
+      color: white;
+      &:hover, &:focus {color: @silver;}
+      &:active, &.active { color: darken(@silver, 20%);}
+    }
+    @media (max-width: 979px) {
+       .nav-collapse {
+         padding-top: 17px;
+         .navbar-collapse;
+       }
+    }
+  }
+}
+.header-10-sub{
+  position:relative;
+  z-index: 50;
+ .v-center;
+  height: 800px;  
+  .hero-unit {
+    padding: 0; margin: 0;
+    background-color: transparent;
+    h1 { margin: 0 0 30px;  .font(45px, white); font-family: @h-font-family; font-weight:300;}
+    p {.font(25px, @silver); font-family: @h-font-family; font-weight:300; .line-height(37.5px);}
+    @media (max-width: 480px) {
+      h1 {.font(36px, white); font-family: @h-font-family; font-weight:300;}
+      p {.font(22px,@silver); .line-height(35px); font-weight:300;}
+    }
+  }
+  .hero-unit.hero-unit-bordered {
+    h1 {
+      .font(46px, white); font-weight: 500; font-family: @h-font-family;
+      border: 8px solid white;
+      display: inline-block;
+      margin: 0; padding: 30px 40px;
+    }
+    @media (max-width: 480px) { h1 {.font(22px, white); font-weight: 500; }}
+  }  
+  color: white;
+  text-align: center;
+  @media (max-width: 480px) { &.v-center > div { padding-top: 35px;}}
+  .control-btn {
+    width: 53px; height: 53px;
+    .line-height(53px);
+    margin: 0; padding: 0;
+    border-radius: 50%;
+    text-align: center;
+    .font(19px ); .a-color(#fff, #fff);
+    background: #121518; .opacity(80);  
+    &:hover, &:focus, &:active, &.active { .opacity(100); }
+    position: absolute;
+    left: 50%; bottom: 90px;
+    margin-left: -26.5px;  
+    @media (max-width: 480px) {bottom: 30px;}
+  }
+}

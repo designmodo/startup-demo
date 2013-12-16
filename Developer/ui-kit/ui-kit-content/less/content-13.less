@@ -1,0 +1,72 @@
+/**
+ * Content 13 stylesheet  
+ * */
+.content-13{
+  position:relative;
+  &.subscribe-form {
+    padding-top: 40px; padding-bottom: 40px;
+    color: #a1a9b1;
+    .span4 {
+      text-align: right;
+      @media (max-width: 767px) { text-align: center; }
+    }
+    form {margin: 0; position: relative;}
+    input[type="text"] {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      .line-height(60px);
+       .font(50px, white); font-family: @h-font-family;
+       font-weight: 500;
+       letter-spacing: -1px;
+      .placeholder-color(white);
+
+      &::-webkit-input-placeholder {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+      &:-moz-placeholder {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+      &::-moz-placeholder {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+      &:-ms-input-placeholder {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+    }
+    .ani-placeholder {
+      .box-sizing(border-box);
+      position: absolute;
+      padding-left: 6px;
+      .line-height(60px);
+      .font(50px,#a1a9b1) ; font-family: @h-font-family;    
+    }  
+    .btn {
+      margin-top: 8px;
+      width: 220px;
+      max-width: 100%;
+      &.btn-primary {
+        background: @button-primary-active;
+        &:hover, &:focus { background: #24deb4;} // should be changed to some color variable
+        &:active, &.active {background: #138871;}
+      }
+    }
+    @media (max-width: 480px) {
+      input[type="text"],
+      .ani-placeholder {
+        width: 100%;
+        margin-bottom: 33px;
+        .line-height(27px);
+        .font(25px, #a1a9b1); font-family: @h-font-family;
+        text-align: center;
+      }
+    }
+  }
+}

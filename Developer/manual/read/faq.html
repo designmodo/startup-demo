@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Startup user manual - F.A.Q.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../flat-ui/images/favicon.ico">
+    <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../../flat-ui/css/flat-ui.css">
+    <!-- Using only with Flat-UI (free)-->
+    <link rel="stylesheet" href="../../common-files/css/icon-font.css">
+    <!-- end -->
+    <link rel="stylesheet" href="../../common-files/css/animations.css">
+    <link rel="stylesheet" href="../read/css/style.css">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+<script src="../../flat-ui/js/html5shiv.js"></script>
+<![endif]-->
+    <script src="../../flat-ui/js/jquery-1.8.3.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+  </head>
+  <body class="wo-components">
+    <nav class="dockbar navbar-fixed-top">
+      <menu class="main-menu">
+        <div class="container">
+          <div class="row">
+            <a href="index.html" class="man-brand span3">
+              <span class="logotype">Startup</span>
+              <span class="doc-title">user manual</span>
+            </a>
+            <button id="open-close-menu" class="menu-btn btn-inverse"><span class="fui-list"></span>
+            </button>
+            <dl class="span8">
+              <dd><a href="index.html">overview</a>
+              </dd>
+              <dd><a href="how_to_install.html">how to install</a>
+              </dd>
+              <dd><a href="tutorials.html">tutorials</a>
+              </dd>
+              <dd><a class="active">f.a.q.</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </menu>
+      <menu class="colapsed-menu">
+        <dl>
+          <dd><a href="index.html">overview</a>
+            <dl>
+              <dd><a href="headers.html">Header</a>
+              </dd>
+              <dd><a href="contents.html">Content 1</a>
+              </dd>
+              <dd><a href="contents2.html">Content 2</a>
+              </dd>
+              <dd><a href="footers.html">Footer</a>
+              </dd>
+              <dd><a href="prices.html">Price</a>
+              </dd>
+            </dl>
+          </dd>
+          <dd><a href="how_to_install.html">how to install</a>
+          </dd>
+          <dd><a href="tutorials.html">tutorials</a>
+          </dd>
+          <dd><a class="active">f.a.q.</a>
+          </dd>
+        </dl>
+      </menu>
+    </nav>
+    <section class="manual-pages faq">
+      <div class="container">
+        <div class="row">
+          <div class="span9">
+            <h1>F.A.Q.</h1>
+            <div class="questions">
+              <div class="question">
+                <p>I have pulled the Startup framework from the repository and its components are not displaying properly. What does this mean?</p>
+                <div class="answer">
+                  <p>The Startup Framework is based on the Flat-UI framework and its repository contains Flat-UI as a project submodule. The above mentioned situation can happen if you have pulled the project without the submodule. In order to fix this,
+                    you need to execute the following commands in your git console:</p>
+                  <pre class="language-bash"><code class="language-bash">git submodule init
+git submodule update</code></pre>
+                  <p>After having done this, the submodule folder 'flat-ui' shouldn't be empty, and Startup components will display correctly.</p>
+                </div>
+              </div>
+              <div class="question">
+                <p>Is Startup framework has some specific CSS classes or it only uses classes from its based frameworks?
+                </p>
+                <div class="answer">
+                  <p>
+                    Startup framework is based on Flat-UI 2.0.0, but it has owned CSS classes and LESS mixins.
+                    <br/>You can watch it in the special <a href="startup-css-micro.html" target="_blank" class="inner-link">Memo</a>.
+                  </p>
+                  <p>We recomend save this page if you will work with our framework.</p>
+                </div>
+              </div>
+              <div class="question">
+                <p>I want to use the 'less' version. How can I do it?</p>
+                <div class="answer">
+                  <p>LESS version it the same version of the "STARTUP framework".</p>
+                  <p>
+                    In order to develop with "LESS", you should already have set up your development environment for this. You can read more about it on the <a href="http://lesscss.org/" target="_blank">official site of the "LESS framework"</a>.
+                  </p>
+                </div>
+              </div>
+              <div class="question">
+                <p>Could I use the "STARTUP framework" without 'LESS'?</p>
+                <div class="answer">
+                  <p>
+                    Yes. You can use the "STARTUP framework" using simple version instructions.
+                  </p>
+                </div>
+              </div>
+              <div class="question">
+                <p>Can I use bootstrap elements inside your framework.</p>
+                <div class="answer">
+                  <p>
+                    "STARTUP framework" based on bootstrap. So you can use boostrap elements inside it.
+                  </p>
+                </div>
+              </div>
+              <div class="question">
+                <p>What version of "Bootstrap" the "STARTUP framework" use as base?</p>
+                <div class="answer">
+                  <p>
+                    "STARTUP framework" based on Bootstrap v2.3.2.
+                  </p>
+                </div>
+              </div>
+              <div class="question">
+                <p>Can I use Bootstrap 3 inside the "STARTUP framework"?</p>
+                <div class="answer">
+                  <p>
+                    "STARTUP framework" until that is not compatible with 3 version.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row man-items">
+          <div class="span3">
+            <h3>Installation</h3>
+            <p>Installation of Startup Framework doesn’t take much of your time. It’s easy!</p>
+            <a href="how_to_install.html" class="learn-more">Learn More</a>
+          </div>
+          <div class="span3">
+            <h3>Flat UI</h3>
+            <p>Startup Framework based on Flat UI Free. You can add new elements using Flat UI Pro Version.</p>
+            <a href="flat-ui.html" class="learn-more">Learn More</a>
+          </div>
+          <div class="span3">
+            <h3>Video Tutorials</h3>
+            <p>Video tutorials show you how to make a web-site for your startup from design to code.</p>
+            <a href="tutorials.html" class="learn-more">Watch Tutorials</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../flat-ui/js/bootstrap.min.js"></script>
+    <!--[if lt IE 8]>
+<script src="../../flat-ui/js/icon-font-ie7.js"></script>
+<![endif]-->
+    <script src="../../common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script src="../../common-files/js/modernizr.custom.js"></script>
+    <script src="../../common-files/js/page-transitions.js"></script>
+    <script src="../../common-files/js/easing.min.js"></script>
+    <script src="../../common-files/js/jquery.svg.js"></script>
+    <script src="../../common-files/js/jquery.svganim.js"></script>
+    <script src="../../common-files/js/startup-kit.js"></script>
+    <script src="../js/prism/prism.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+/**
+ * Content 11 stylesheet  
+ * */
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+.content-11 {
+  position:relative;
+  text-align: center;
+  padding-top: 35px; padding-bottom: 35px;
+  background: rgba(241, 196, 15, 0.1);  
+  .font(24px, @base); font-family: @h-font-family;
+  font-weight: 300;
+  > .container {position: relative;}
+  .btn {
+    margin-left: 33px;    
+    .font(14px,white);
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;    
+   
+  }
+  @media (max-width: 480px) {
+    > .container > span {display: block;}
+    .btn {margin: 30px 0 0;}
+  }
+}
