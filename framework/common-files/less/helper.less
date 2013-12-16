@@ -1,0 +1,137 @@
+//--  HELPER FUNCTIONS AND VARIABLES ----------------------------------------------------------------------------
+
+@h-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@c-font-family: @h-font-family;
+@h-text-color: @midnight-blue;
+@c-text-color: @asbestos;
+
+// 14px - base font-size in flat-ui, so if it will change we should change all fonts. And this mixin do it!
+.font(@font-size:16px,@color:@c-text-color){
+  @font-flat-ui: (@font-size/14); 
+  font-size: @font-flat-ui * @base-font-size;
+  font-weight:normal;
+  color: @color;
+}
+
+//1.231em - flat-ui standart line-height
+@em-px:18; //18px=1em standart. If you declarate another value change this variable to your value!!! 
+.line-height(@line-height: (@base-line-height * @em-px)px){ 
+  @tem-lh: @line-height * 1.231;
+  line-height:(@tem-lh /  (@base-line-height * @em-px)) * @em-px;
+}
+
+//-- end HELPER FUNCTIONS ---------------------------------------------------------------------------------------
+.delimiter {
+    margin-top: 200px;
+    &.line {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        border-top: 2px solid #ebedee;
+    }
+}
+header {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  z-index:100;
+  .brand {
+      .font(25px,@base);
+      font-family:@h-font-family;
+      font-weight: 800;
+      letter-spacing:-1px;
+      color: #2c3e50;
+      img:first-child {float: left; margin: -10px 15px 0 0;}
+  }
+}
+
+section{ *{z-index:2;} }
+.background {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0; z-index:1;
+  background: 50% 50% no-repeat;
+  .background-size(cover);
+  .opacity(20);
+  @media (max-width: 768px) {
+    .background-size(auto 200%);
+  }
+}
+.container{
+  position:relative;
+  z-index:2;
+}
+
+.navbar-collapse(){
+   .box-sizing(border-box);
+    position: fixed;
+    top: 0; bottom: 0; left: 100%;
+    width: 72%; height: auto!important;
+    padding: 25px 0;
+    border-radius: 0;
+    float: none;    
+    overflow: auto!important;
+    background: #222527;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    > * {
+      margin: 30px 0 0!important;
+      &:first-child {margin-top: 0!important;}
+    }
+    .nav > li {
+      margin: 0;
+      > a {
+        display: block!important;
+        margin: 0;
+        padding: 12px 35px;
+        border-bottom: 2px solid #24292d;
+        font-size: 13px; font-weight: normal;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        letter-spacing: 1px;
+        .a-color(#5b5e61, #fff);
+        text-transform: uppercase;
+      }
+      &.active > a {.a-color(#fff, #fff);}
+    }
+    .subnav {
+      display: block;
+      list-style: none;
+      li > a {
+        display: block;
+        margin: 0;
+        padding: 7px 35px;
+        font-size: 13px; font-weight: normal;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        .a-color(#5b5e61, #fff);
+        text-transform: capitalize;
+      }
+    }
+    .navbar-form,.navbar-search {padding: 10px 35px;}
+}
+
+header{
+  @media (max-width: 767px){
+    padding-left:20px; padding-right:20px;
+    .box-sizing(border-box);
+  }
+}
+
+.nav-visible{
+ .navbar .nav-collapse .nav >li > a:hover, .navbar .nav-collapse .nav >li > li a:focus{
+    background-color: transparent;
+  }
+.nav-collapse .navbar-form, .nav-collapse .navbar-search {
+  border-bottom: 0 none;
+  border-top: 0 none;
+  box-shadow: none;
+  margin: 10px 0;
+  padding: 10px 15px;
+  a.btn{
+    border-color:white;
+    color:white;
+    &:hover, &:focus{
+      color:@c-text-color;
+      background-color:white;
+    }
+  }
+}
+}

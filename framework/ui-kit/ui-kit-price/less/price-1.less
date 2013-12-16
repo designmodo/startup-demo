@@ -1,0 +1,71 @@
+/**
+ * Price 1 stylesheet  
+ * */
+.price-1 {
+  .plan {
+    position: relative;
+    .box-sizing(border-box);
+    border: 3px solid #ebedee;
+    padding: 25px 0;
+    .border-radius(4px);
+    text-align: center;
+    color: #bdc3c7;
+    font-size: 18px;
+    font-weight: normal;
+
+    > * {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    b {
+      color: #7f8c8d;
+    }
+
+    .title {
+      color: #2c3e50;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      margin: 26px 0;
+      padding-top: 22px;
+      border-top: 2px solid #ebedee;
+      line-height: 28px;
+      font-weight: normal;
+      b{
+        font-weight: 500;
+      }
+    }
+
+    .btn {
+      min-width: 150px;
+    }
+  }
+
+  .ribbon {
+    position: absolute;
+    right: -3px;
+    top: 26px;
+    @media (max-width: 979px) {
+      & {
+        top: 4px;
+      }
+    }
+    @media (max-width: 767px) {
+      top: 26px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .plan {
+      margin-top: 30px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

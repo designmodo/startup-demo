@@ -1,0 +1,210 @@
+.nav-visible{
+  .dockbar {
+    display:none;
+  }
+  .read-man{
+    display:none;
+  }
+}
+
+.dockbar {
+  .transition(z-index 4s ease 0s);
+  display: block;
+  width: 100%;
+  .box-sizing(border-box);
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  font-family: @h-font-family;
+  &.navbar-fixed-top{
+    .colapsed-menu{display:none;}
+    @media (max-width: 1200px) {
+
+      .colapsed-menu{
+        float: right;
+        display:none;
+        max-width: 400px;
+        position: absolute;
+        right: 0;
+        top: 67px;
+        width: auto;
+        margin:0;
+        padding:0;
+        dl{
+          position:relative;
+          display:block;
+          margin:0;
+          dd{
+            border-bottom:1px solid #202428;
+            .line-height(45px);
+            display:block;
+            margin:0;
+            .box-sizing('border-box');
+            width:100%;
+            float:left;
+            text-transform:uppercase;
+            &:hover, &:focus{
+              dd{
+                display: block;
+              }
+            }
+            dd{
+              display: none;
+              margin:0 0 0 20px;
+              font-size:12px;
+              border: 0 none;
+            }
+            >a{
+              float:left;
+              display:block;
+              width:100%;
+              padding:0 0 0 65px;
+              .a-color(#919497, white);
+              &.active{
+                text-decoration:none;
+                color:white;
+                &:after{
+                  display:none;
+                }
+              }
+            }
+            background-color: #1f1b23;
+          }
+        }
+      }
+
+
+
+
+      > menu {padding:0 0 0 20px;}
+      position:fixed;
+      .container{
+        width:auto;
+      }
+
+    }
+  }
+  .menu-btn{
+    display:none;
+    @media (max-width: 1200px) {
+      display: inline-block;
+      float: right;
+      position: relative;
+      .box-sizing(border-box);
+      width:66px;
+      height: 66px;
+      background: none #1b1f23;
+      border: 0 none;
+      border-left: 1px solid #272b2f;
+      color: #919497;
+      &:hover, &:focus{
+        border: 0 none;
+        border-left: 1px solid #272b2f;
+        color: #ffffff;
+      }
+
+    }
+  }
+  .main-menu {
+    display: block;
+    overflow: hidden;
+    background-color: #1b1f23;
+    margin: 0;
+    .box-sizing(border-box);
+    width: 100%;
+    padding: 0;
+    > div {
+      height: 65px;
+      > div {
+        height: 65px;
+      }
+    }
+    a.man-brand {
+      display: inline-block;
+      float:left;
+      text-decoration: none;
+      .line-height(65px);
+
+      @media (max-width: 1200px) {
+        .line-height(65px);
+        width: auto;
+
+      }
+      .logotype {
+        .font(16px, white);
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      .doc-title {
+        text-transform: uppercase;
+        .font(16px, #919497);
+        font-weight: normal;
+      }
+    }
+
+    dl {
+      display: inline-block;
+      margin: 0;
+      @media (max-width: 1200px) {
+        display:none;
+
+      }
+
+      dd {
+        margin: 0;
+        padding:17px 0;
+        .line-height(31px);
+        display: inline-block;
+
+        a {
+          .font(12px, #919497);
+          font-family: @h-font-family;
+          font-weight: 500;
+          padding-right:22px;
+          text-transform: uppercase;
+          text-decoration: underline;
+          .a-color(#919497, white);
+          display:block;
+
+
+          &.active {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+body{
+  padding-top: 66px;
+  position:relative;
+  font-family:@h-font-family;
+  &.hovered{
+    background-color: @clouds;
+  }
+  &.colapsed-menu-active{
+    height:100%;
+    overflow:hidden;
+    .colapsed-menu{
+      display:block !important;
+    }
+  }
+
+  .delimiter-big{
+    margin-top: 180px;
+  }
+  .delimiter{
+    margin-top: 30px;
+  }
+  section.content-30, section.content-33 {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+
+  section[class*=content-]{
+    margin-top: 0; margin-bottom: 0;
+  }
+}

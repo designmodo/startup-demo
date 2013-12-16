@@ -1,0 +1,116 @@
+// background styles
+.bg-white {         background-color: #ffffff};
+.bg-black {         background-color: #000000};
+
+.bg-turquoise {     background-color: #1abc9c};
+.bg-green-sea {     background-color: #16a085};
+
+.bg-emerland {      background-color: #2ecc71};
+.bg-nephritis {     background-color: #27ae60};
+
+.bg-peter-river {   background-color: #3498db};
+.bg-belize-hole {   background-color: #2980b9};
+
+.bg-amethyst {      background-color: #9b59b6};
+.bg-wisteria {      background-color: #8e44ad};
+
+.bg-wet-asphalt {   background-color: #34495e};
+.bg-midnight-blue { background-color: #2c3e50};
+
+.bg-sun-flower {    background-color: #f1c40f};
+.bg-orange {        background-color: #f39c12};
+
+.bg-carrot {        background-color: #e67e22};
+.bg-pumpkin {       background-color: #d35400};
+
+.bg-alizarin {      background-color: #e74c3c};
+.bg-pomegranate {   background-color: #c0392b};
+
+.bg-clouds {        background-color: #ecf0f1};
+.bg-silver {        background-color: #bdc3c7};
+
+.bg-concrete {      background-color: #95a5a6};
+.bg-asbestos {      background-color: #7f8c8d};
+
+
+.bg-base {          background-color: #34495e};
+.bg-firm {          background-color: #1abc9c};
+.bg-success {       background-color: #2ecc71};
+.bg-danger {        background-color: #e74c3c};
+.bg-warning {       background-color: #f1c40f};
+.bg-info {          background-color: #3498db};
+
+
+// border styles
+.bordered { border-style: solid; }
+
+.bordered.bg-turquoise {     border-color: @green-sea};
+.bordered.bg-emerland {      border-color: @nephritis};
+.bordered.bg-peter-river {   border-color: @belize-hole};
+.bordered.bg-amethyst {      border-color: @wisteria};
+.bordered.bg-wet-asphalt {   border-color: @midnight-blue};
+.bordered.bg-sun-flower {    border-color: @orange};
+.bordered.bg-carrot {        border-color: @pumpkin};
+.bordered.bg-alizarin {      border-color: @pomegranate};
+.bordered.bg-clouds {        border-color: @silver};
+.bordered.bg-concrete {      border-color: @asbestos};
+
+@h-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@c-font-family: @h-font-family;
+
+// common styles
+body {
+  overflow-x:hidden;
+  color: @asbestos;
+  line-height: 1.29;
+  @media (max-width: 767px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+body > section,
+header,
+footer {
+  position: relative;
+  .box-sizing(border-box);
+  @media (max-width: 767px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: @h-font-family;
+  color: #2c3e50;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+// force best img interpolation in Chrome
+img {
+  -webkit-backface-visibility: hidden;
+}
+
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{
+  font-family: @h-font-family;
+  .font(16px);
+}
+
+a, button{
+  &:hover, &:focus, &:active{
+    outline: none;
+  }
+}

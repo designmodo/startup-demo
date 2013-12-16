@@ -1,0 +1,28 @@
+/**
+ * Content 8 stylesheet  
+ * */
+.content-8{  
+  position:relative;
+   text-align: center;
+   h3 {
+    text-align: center;
+    .font(30px, @base); font-family:@h-font-family;  
+    margin:70px 0 35px;
+  }
+  p{.font(18px); margin-bottom:43px;}
+   .btn.btn-clear {
+      .box-sizing(border-box);
+      background: none;
+      border: 2px solid @danger;
+      .font(14px); font-weight: 500; font-family: @h-font-family;
+      padding: 12px 28px 12px;
+      color: @danger;
+      &:hover, &:focus { background: @danger;  color: #fff;}
+      &:active, &.active {
+         border-color: @button-danger-active;
+         background: @button-danger-active;
+         color: rgba(255, 255, 255, 0.75);
+      }
+   }
+   .v-center;
+}

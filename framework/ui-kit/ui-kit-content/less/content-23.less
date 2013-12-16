@@ -1,0 +1,46 @@
+.content-23{
+  position:relative;
+    height:800px; //should be fix
+   .background-size(cover);
+   color: white;
+   .v-center;
+   .control-btn {
+    width: 53px; height: 53px;
+    .line-height(53px);
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    text-align: center;
+    .font(19px);
+    background: #121518; //should be change to color variable
+    .a-color(white, white);
+    .opacity(30);  
+    &:hover,&:focus,&:active,&.active {.opacity(100);}
+    position: absolute;
+    left: 50%; bottom: 90px;
+    margin-left: -26.5px;  
+    @media (max-width: 480px) {bottom: 30px;}
+  }  
+    .hero-unit {
+      text-align:center;
+      padding: 0; margin: 0;
+      background-color: transparent;  
+      h1 {
+        margin: 0 0 30px;
+        .font(48px, white);
+        font-weight: 600;
+        line-height: 56px;
+      }      
+    @media (max-width: 480px) {h1 {.font(36px,white); font-weight: 600; .line-height(33px); }}
+  }  
+  .hero-unit.hero-unit-bordered {
+    h1 {
+      .font(46px,white); font-weight: 500;
+      border: 8px solid white;
+      display: inline-block;
+      margin: 0;
+      padding: 30px 40px;
+    }  
+    @media (max-width: 767px) { h1 { .font(28px, white); font-weight: 600; } }
+  }  
+}
