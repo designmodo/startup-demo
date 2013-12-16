@@ -1,0 +1,68 @@
+@import '../../../flat-ui/less/config.less';
+@import '../../../flat-ui/less/mixins.less';
+/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
+@import '../../../common-files/less/mixins.less';
+@import '../../../common-files/less/common.less';
+@import '../../../common-files/less/navbar.less';
+@import '../../../common-files/less/helper.less';
+
+
+
+/* header */
+@import '../../../ui-kit/ui-kit-header/less/header-10.less';
+
+/* content */
+@import '../../../ui-kit/ui-kit-content/less/content-7.less';
+@import '../../../ui-kit/ui-kit-content/less/content-8.less';
+@import '../../../ui-kit/ui-kit-content/less/content-11.less';
+@import '../../../ui-kit/ui-kit-content/less/content-23.less';
+
+/* footer */
+@import '../../../ui-kit/ui-kit-footer/less/footer-3.less';
+
+.header-10-sub .background{
+  background-image:url("../img/img-1.jpg");
+  .opacity(85);
+}
+.header-10{
+  background-color:#1b1f23;
+  .btn{
+    &:hover, &.active, &:focus{
+     background-color:#2ecc71;
+    }
+  }
+}
+
+body > section.v-center > div {
+	padding-top: 200px;
+	padding-bottom: 200px;
+  @media (max-width: 767px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.content-23{
+  #bgVideo{
+    overflow: hidden;
+    > video{
+      position: absolute !important;
+      top:0 !important;
+    }
+  }
+  overflow: hidden;
+  .control-btn{
+    .opacity(10);
+  }
+  background-color: #1B1F23;
+  &.custom-bg {
+    background-image:url('../img/Italy_001.png');
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    background-attachment: fixed; 
+  }
+}
+
+.footer-3 {
+	background-color: #1B1F23;
+	color: #7F8C8D;
+}

@@ -1,0 +1,85 @@
+@import '../../../flat-ui/less/config.less';
+@import '../../../flat-ui/less/mixins.less';
+/*only fo flat-ui free*/ @import '../../../common-files/less/flat-ui-free2.0.0-fix.less'; /* end only for flat-ui free*/
+@import '../../../common-files/less/mixins.less';
+@import '../../../common-files/less/common.less';
+@import '../../../common-files/less/navbar.less';
+@import '../../../common-files/less/helper.less';
+
+
+/* header */
+@import '../../../ui-kit/ui-kit-header/less/header-11.less';
+
+/* price */
+@import '../../../ui-kit/ui-kit-price/less/price-common.less';
+@import '../../../ui-kit/ui-kit-price/less/price-1.less';
+
+/* content */
+@import '../../../ui-kit/ui-kit-content/less/content-13.less';
+
+/* footer */
+@import '../../../ui-kit/ui-kit-footer/less/footer-2.less';
+
+.header-11-sub .background{
+  background-image: url("../img/Brazil_002.png");
+  .opacity(80);
+  @media (max-width: 767px) {
+    background: #f6f6f2;
+  }
+}
+.header-11-sub{
+  h3{
+    color:@h-text-color;
+  }
+  p{
+    color:#7f8c8d;
+  }
+  .additional-links{
+    color:#7f8c8d;
+    a{
+      color:#697172;
+    }
+  }
+}
+
+.logos {
+  background: #f1f1f1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  > .container {
+    display: table;
+
+    > div {
+      display: table-cell;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.price-1 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  h3 {
+    margin: 0 0 8px;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+
+  .lead {
+    font-size: 25px;
+    font-family: @h-font-family;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+}
