@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Demo version of Startup Framework</title>
 		<style>
-    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
+            html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
             article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
             body{line-height:1}
             ol,ul{list-style:none}
@@ -32,13 +32,14 @@
             .components {max-width: 800px; margin: 0 auto; padding: 130px 20px;}
             .cc {max-width: 800px; margin: 0 auto; padding: 130px 0;text-align:center;}
             .cc img {margin-bottom:45px; }
-			
+            .cc h2 a {color:#303336; border-bottom:1px solid #cbcbcb;text-decoration: none;}
+            .cc h2 a:hover { opacity:0.8; }
+            
             .logo {display: inline-block; margin-top:16px;}
             .article-content {line-height: 36px; font-size: 20px; color: #7f8c8d}
             .features {padding-top: 45px;}
             .features img {padding-bottom: 44px;width:100%;}
             .features li {width: 230px;display: inline-block;margin-right: 18px;padding:19px 19px;position: relative;left: -23px;border:4px solid rgba(191,191,186,0);vertical-align: top;}
-            .features li:hover {border-color:rgba(191,191,186,0.25);}
             .features li:last-child {margin-right:0;}
             .features p {font-size: 16px; line-height: 26px; color:#696f6f;margin-bottom: 7px;}
             .features a {line-height: 32px; color:#1b1f23; text-decoration:none;border-bottom:1px solid #cbcbcb;}
@@ -49,79 +50,35 @@
             .grab a:hover {background-color: #e74c3c;}
             
             .footer { font-size:14px;color:#696f6f;padding:75px 0; text-align:center; max-width:940px; margin: 0 auto;line-height:26px;}
-            .footer a {color:#1b1f23; text-decoration:none;border-bottom:1px solid #cbcbcb;}
+            .footer a { color:#1b1f23; text-decoration:none;border-bottom: 1px solid #cbcbcb;}
 			 .footer a:hover { color:#35d0b5;}
 			
 			 @media screen and (max-width: 840px) {
-			 	.features li {
-					left:0;
-					padding:23px 0;
-					border-width:0px;
-					margin-right:14px;
-			 	}
+			 	.features li { left:0; padding:23px 0; border-width:0px; margin-right:14px; }
 				.samples li:last-child {height:auto;}
-				.samples, .components, .images, .cc { 
-					padding: 85px 20px;
-				}
-				h1 { 
-					margin-bottom: 50px;
-				}
+				.samples, .components, .images, .cc { padding: 85px 20px;}
+				h1 {margin-bottom: 50px;}
 			 }
 			 
 			 @media screen and (max-width: 768px) {
-				 .features li {
-					width: 32%;	
-					margin:0 0 75px;
-					padding:23px 10px 0 0;
-				}
+				.features li { width: 32%; margin:0 0 75px; padding:23px 10px 0 0; }
 				.features li:last-child { margin:0;}
-				 
 			 }
 			 
 			 @media screen and (max-width: 568px) {
-				 
-				.samples, .overview, .components, .images, .cc { 
-					padding: 50px 20px;
-				}
-				.menu { 
-					
-				} 
-				h1 { 
-					margin-bottom: 30px;
-				}
-				h2 {
-					font-size: 24px;
-					margin-bottom: 47px;
-					line-height: 35px;
-				}
+				.samples, .overview, .components, .images, .cc { padding: 50px 20px;}
+				h1 { margin-bottom: 30px;}
+				h2 {font-size: 24px;margin-bottom: 47px;line-height: 35px;}
 			 }
 			 
 			 @media screen and (max-width: 480px) {
-				 .features li { 
-				 	display:block;
-					width:100%;
-				 }
-				 .features img { 
-				 	width:auto;
-				 }
-				 
-				 .menu { 
-					padding: 0;
-					text-align: center;
-				 }
+				 .features li { display:block;width:100%;}
+				 .features img { width:auto;}	 
+				 .menu { padding: 0;text-align: center;}
 				 .logo { padding: 40px 20px; }
-				 .back {
-					display: block;
-					float: none;
-					border-radius:0;
-					border-right-width:0; border-left-width:0px;border-top-width:0px;
-				 }
-				 .grab a { font-size: 30px }
-				 
+				 .back { display: block; float: none; border-radius:0; border-right-width:0; border-left-width:0px;border-top-width:0px; }
+				 .grab a { font-size: 30px } 
 			 	.shares iframe { display:block;margin: 15px auto;}
-			 }
-			 
-			 @media screen and (max-width: 320px) {
 			 }
         </style>
     </head>
@@ -215,13 +172,13 @@
                               <img src="img/overview-3.png">
                               <h4>Macbook</h4>
                               <p>You can place your image in a laptop window or on a moleskine page.</p>
-                              <a href="img/macbook_1200.jpg" target="_blank">Look at the photo</a>
+                              <a href="img/macbook.jpg" target="_blank">Look at the photo</a>
                           </li>
                           <li>
                               <img src="img/images-2.png">
                               <h4>iPad in the Hands</h4>
                               <p>You most probably will need a photo with an iPad ;)</p>
-                              <a href="img/ipad_1200.jpg" target="_blank">Look at the photo</a>
+                              <a href="img/ipad.jpg" target="_blank">Look at the photo</a>
                           </li>
                       </ul>
                    </div>
@@ -229,10 +186,10 @@
                
 				<div class="cc">
                 	<img src="img/cc.png"/>
-					<h2>This demo is licensed under a CC 3.0. You are allowed to use these components anywhere you want, however we’ll highly appreciate if you'll show a link to our website.</h2>
+					<h2><a href="http://creativecommons.org/licenses/by/4.0/deed.en_US" target="_blank">This demo is licensed under a CC 4.0. You are allowed to use these components anywhere you want, however we’ll highly appreciate if you'll show a link to our website.</a></h2>
                     <div class="shares">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="designmodo" data-size="large">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                  	<a href="https://twitter.com/share" class="twitter-share-button" data-via="designmodo" data-size="large">Tweet</a>
+                  	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                   	<iframe src="http://ghbtns.com/github-btn.html?user=designmodo&repo=startup-demo&type=watch&count=true&size=large" frameborder="0" scrolling="0" style="width: 103px;height: 30px;" allowTransparency="true"></iframe>
                   	<iframe src="http://ghbtns.com/github-btn.html?user=designmodo&repo=startup-demo&type=fork&count=true&size=large" frameborder="0" scrolling="0" style="width: 100px;height: 30px;" allowTransparency="true"></iframe>
                     </div>
