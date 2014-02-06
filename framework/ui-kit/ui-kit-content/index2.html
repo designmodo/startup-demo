@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Content</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="shortcut icon" href="../../flat-ui/images/favicon.ico">
     <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap-responsive.css">
@@ -12,14 +14,10 @@
     <link rel="stylesheet" href="../../common-files/css/icon-font.css">
     <!-- end -->
     <link rel="stylesheet" href="../../common-files/css/animations.css">
-    <link rel="stylesheet" href="../ui-kit-content/css/style.css">
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-        <script src="../../flat-ui/js/html5shiv.js"></script>
-        <![endif]-->
+    <link rel="stylesheet" href="../ui-kit-content/css/ui-kit-styles.css">
   </head>
   <body>
-    <nav class="dockbar navbar-fixed-top">
+    <nav class="dockbar navbar-fixed-top" id="header-dockbar">
       <menu class="main-menu">
         <div class="container">
           <div class="row">
@@ -112,11 +110,8 @@
     </section>
     <div class="delimiter-big"></div>
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../flat-ui/js/jquery-1.8.3.min.js"></script>
+    <script src="../../common-files/js/jquery-1.10.2.min.js"></script>
     <script src="../../flat-ui/js/bootstrap.min.js"></script>
-    <!--[if lt IE 8]>
-        <script src="../../flat-ui/js/icon-font-ie7.js"></script>
-        <![endif]-->
     <script src="../../common-files/js/modernizr.custom.js"></script>
     <script src="../../common-files/js/page-transitions.js"></script>
     <script src="../../common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
@@ -124,8 +119,6 @@
     <script src="../../common-files/js/easing.min.js"></script>
     <script src="../../common-files/js/jquery.svg.js"></script>
     <script src="../../common-files/js/jquery.svganim.js"></script>
-    <!--<script src="../ui-kit-content/js/script.js"></script>-->
     <script src="../../common-files/js/startup-kit.js"></script>
-    <script src="../script.js"></script>
   </body>
 </html>
