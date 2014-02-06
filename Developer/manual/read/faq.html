@@ -13,15 +13,10 @@
     <!-- end -->
     <link rel="stylesheet" href="../../common-files/css/animations.css">
     <link rel="stylesheet" href="../read/css/style.css">
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-<script src="../../flat-ui/js/html5shiv.js"></script>
-<![endif]-->
-    <script src="../../flat-ui/js/jquery-1.8.3.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+    <script src="../../common-files/js/jquery-1.10.2.min.js"></script>
   </head>
   <body class="wo-components">
-    <nav class="dockbar navbar-fixed-top">
+    <nav class="dockbar navbar-fixed-top" id="header-dockbar">
       <menu class="main-menu">
         <div class="container">
           <div class="row">
@@ -72,68 +67,70 @@
     <section class="manual-pages faq">
       <div class="container">
         <div class="row">
-          <div class="span9">
+          <div class="span12">
             <h1>F.A.Q.</h1>
             <div class="questions">
               <div class="question">
                 <p>I have pulled the Startup framework from the repository and its components are not displaying properly. What does this mean?</p>
                 <div class="answer">
-                  <p>The Startup Framework is based on the Flat-UI framework and its repository contains Flat-UI as a project submodule. The above mentioned situation can happen if you have pulled the project without the submodule. In order to fix this,
-                    you need to execute the following commands in your git console:</p>
+                  <p>Startup framework is based on the Flat-UI framework and its repository contains Flat-UI as a project submodule. The above mentioned situation can happen if you have pulled the project without the submodule. In order to fix this, you
+                    need to execute the following commands in your git console:
+                  </p>
                   <pre class="language-bash"><code class="language-bash">git submodule init
 git submodule update</code></pre>
                   <p>After having done this, the submodule folder 'flat-ui' shouldn't be empty, and Startup components will display correctly.</p>
                 </div>
               </div>
               <div class="question">
-                <p>Is Startup framework has some specific CSS classes or it only uses classes from its based frameworks?
-                </p>
+                <p>Does Startup framework have any specific CSS classes or it only uses classes from its base frameworks?</p>
                 <div class="answer">
                   <p>
-                    Startup framework is based on Flat-UI 2.0.0, but it has owned CSS classes and LESS mixins.
-                    <br/>You can watch it in the special <a href="startup-css-micro.html" target="_blank" class="inner-link">Memo</a>.
+                    Startup framework is based on Flat-UI 2.0.0, but it has its own additional CSS classes and LESS mixins
                   </p>
-                  <p>We recomend save this page if you will work with our framework.</p>
+                  <p>
+                    You can see it in the special <a href="startup-css-micro.html" target="_blank" class="inner-link">Memo</a>.
+                  </p>
+                  <p>We recommend saving this page if you are going to work with our framework.</p>
                 </div>
               </div>
               <div class="question">
-                <p>I want to use the 'less' version. How can I do it?</p>
+                <p>I want to use 'LESS'. How can I do it?</p>
                 <div class="answer">
-                  <p>LESS version it the same version of the "STARTUP framework".</p>
+                  <p>LESS is included within the same version of Startup framework.</p>
                   <p>
-                    In order to develop with "LESS", you should already have set up your development environment for this. You can read more about it on the <a href="http://lesscss.org/" target="_blank">official site of the "LESS framework"</a>.
-                  </p>
-                </div>
-              </div>
-              <div class="question">
-                <p>Could I use the "STARTUP framework" without 'LESS'?</p>
-                <div class="answer">
-                  <p>
-                    Yes. You can use the "STARTUP framework" using simple version instructions.
+                    In order to develop with "LESS", you should already have set up your development environment for this. You can read more about it on the <a href="http://lesscss.org/" target="_blank">official site of the "LESS framework</a>.
                   </p>
                 </div>
               </div>
               <div class="question">
-                <p>Can I use bootstrap elements inside your framework.</p>
+                <p>Can I use Startup framework without 'LESS'?</p>
                 <div class="answer">
                   <p>
-                    "STARTUP framework" based on bootstrap. So you can use boostrap elements inside it.
+                    Yes. Just follow the instructions for simple version.
                   </p>
                 </div>
               </div>
               <div class="question">
-                <p>What version of "Bootstrap" the "STARTUP framework" use as base?</p>
+                <p>Can I use Bootstrap elements inside your framework?</p>
                 <div class="answer">
                   <p>
-                    "STARTUP framework" based on Bootstrap v2.3.2.
+                    Startup framework is based on Bootstrap so you can use Bootstrap elements inside it.
                   </p>
                 </div>
               </div>
               <div class="question">
-                <p>Can I use Bootstrap 3 inside the "STARTUP framework"?</p>
+                <p>What version of Bootstrap is Startup framework based on?</p>
                 <div class="answer">
                   <p>
-                    "STARTUP framework" until that is not compatible with 3 version.
+                    Startup framework is based on Bootstrap v2.3.2.
+                  </p>
+                </div>
+              </div>
+              <div class="question">
+                <p>Can I use Bootstrap 3 inside Startup framework?</p>
+                <div class="answer">
+                  <p>
+                    Startup framework isn’t yet compatible with Bootstrap 3.
                   </p>
                 </div>
               </div>
@@ -161,9 +158,6 @@ git submodule update</code></pre>
     </section>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../../flat-ui/js/bootstrap.min.js"></script>
-    <!--[if lt IE 8]>
-<script src="../../flat-ui/js/icon-font-ie7.js"></script>
-<![endif]-->
     <script src="../../common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
     <script src="../../common-files/js/modernizr.custom.js"></script>
     <script src="../../common-files/js/page-transitions.js"></script>

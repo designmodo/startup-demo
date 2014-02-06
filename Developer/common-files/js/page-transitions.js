@@ -340,6 +340,10 @@ var PageTransitions = function() {
       outClass = 'pt-page-rotateSlideOut';
       inClass = 'pt-page-rotateSlideIn';
       break;
+    case 68:
+        outClass = 'pt-page-fade-out';
+        inClass = 'pt-page-fade-in pt-page-delay400';
+        break;
     default:
       outClass = 'pt-page-moveToLeft';
       inClass = 'pt-page-moveFromRight';

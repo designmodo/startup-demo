@@ -50,29 +50,38 @@ function fadedEls(el, shift) {
             $(this).parallax('50%', 0.3, true);
         });
 
-        // Faded elements
-        fadedEls($('.content-7'), 300);
-        fadedEls($('.content-8'), 300);
+        /* For the section content-8 */
+        if ($('.content-8').length > 0) {
+            fadedEls($('.content-8'), 300);
+        }
 
-        // Ani screen
-        (function(el) {
-            $('img:first-child', el).css('left', '-29.7%');
+        /* For the section content-7 */
 
-            $(window).resize(function() {
-                if (!el.hasClass('ani-processed')) {
-                    el.data('scrollPos', el.offset().top - $(window).height() + el.outerHeight());
-                }
-            }).scroll(function() {
-                if (!el.hasClass('ani-processed')) {
-                    if ($(window).scrollTop() >= el.data('scrollPos')) {
-                        el.addClass('ani-processed');
-                        $('img:first-child', el).animate({
-                            left : 0
-                        }, 500);
+        if ($('.content-7').length > 0) {
+
+            // Faded elements
+            fadedEls($('.content-7'), 300);
+
+            // Ani screen
+            (function(el) {
+                $('img:first-child', el).css('left', '-29.7%');
+
+                $(window).resize(function() {
+                    if (!el.hasClass('ani-processed')) {
+                        el.data('scrollPos', el.offset().top - $(window).height() + el.outerHeight());
                     }
-                }
-            });
-        })($('.screen'));
+                }).scroll(function() {
+                    if (!el.hasClass('ani-processed')) {
+                        if ($(window).scrollTop() >= el.data('scrollPos')) {
+                            el.addClass('ani-processed');
+                            $('img:first-child', el).animate({
+                                left : 0
+                            }, 500);
+                        }
+                    }
+                });
+            })($('.screen'));
+        }
 
        
         (function(el) {

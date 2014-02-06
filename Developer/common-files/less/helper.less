@@ -2,6 +2,7 @@
 
 @h-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 @c-font-family: @h-font-family;
+@proxima: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @h-text-color: @midnight-blue;
 @c-text-color: @asbestos;
 
@@ -62,8 +63,11 @@ section{ *{z-index:2;} }
 .navbar-collapse(){
    .box-sizing(border-box);
     position: fixed;
-    top: 0; bottom: 0; left: 100%;
-    width: 72%; height: auto!important;
+    top: 0;
+    bottom: 0;
+    right: -230px;
+    width: 230px;
+    height: auto!important;
     padding: 25px 0;
     border-radius: 0;
     float: none;    
@@ -116,10 +120,10 @@ header{
 }
 
 .nav-visible{
- .navbar .nav-collapse .nav >li > a:hover, .navbar .nav-collapse .nav >li > li a:focus{
+ .nav-collapse .nav > li > a:hover, .navbar .nav-collapse .nav > li > a:focus{
     background-color: transparent;
   }
-.nav-collapse .navbar-form, .nav-collapse .navbar-search {
+  .nav-collapse .navbar-form, .nav-collapse .navbar-search {
   border-bottom: 0 none;
   border-top: 0 none;
   box-shadow: none;
@@ -134,4 +138,7 @@ header{
     }
   }
 }
+}
+.nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus {
+  background-color: transparent;
 }

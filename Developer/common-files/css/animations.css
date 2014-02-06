@@ -58,6 +58,18 @@
 	animation: fade .7s ease both;
 }
 
+.pt-page-fade-in {
+    -webkit-animation: fade-in .8s ease both;
+    -moz-animation: fade-in .8s ease both;
+    animation: fade-in .8s ease both;
+}
+
+.pt-page-fade-out {
+    -webkit-animation: fade-out .5s ease both;
+    -moz-animation: fade-out .5s ease both;
+    animation: fade-out .5s ease both;
+}
+
 /* move from / to and fade */
 
 .pt-page-moveToLeftFade {
@@ -225,6 +237,33 @@
 }
 @keyframes fade {
 	to { opacity: 0.3; }
+}
+
+/* fade out */
+
+@-webkit-keyframes fade-out {
+    to { opacity: 0; }
+}
+@-moz-keyframes fade-out {
+    to { opacity: 0; }
+}
+@keyframes fade-out {
+    to { opacity: 0; }
+}
+
+/* fade in */
+
+@-webkit-keyframes fade-in {
+    from {opacity: 0 }
+    to { opacity: 1; }
+}
+@-moz-keyframes fade-in {
+    from {opacity: 0 }
+    to { opacity: 1; }
+}
+@keyframes fade-in {
+    from {opacity: 0 }
+    to { opacity: 1; }
 }
 
 /* move from / to and fade */
