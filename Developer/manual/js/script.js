@@ -5,8 +5,7 @@
             $(this).text($(this).html());
         });
 
-         $('html').click(function (e) {
-            // console.warn('element clicked = ',$(e.target).attr('class'), '\n parent element = ', $(e.target).parents().attr('class'));
+        $('html').click(function (e) {
             if (!$(e.target).hasClass('menu-btn') && !$(e.target).hasClass('colapsed-menu') && !$(e.target).parents().hasClass('colapsed-menu') && !$(e.target).parents().hasClass('menu-btn')) {
                 $('body').removeClass('colapsed-menu-active');
             }
@@ -57,20 +56,6 @@
                 $('.manual .' + id).show();
 
                 $('html').addClass('read-manual');
-
-//                var elem = $('.mcontent > .' + id + ':not(.mask)');
-//                if (elem.length == 0) {
-//                    elem = $('.mcontent > .' + id + '-sub');
-//                }
-//                var elemPos = 0;
-//                if ($('.' + id + '-map').length != 0) {
-//                    elemPos = $(this).position().top + 110;
-//                } else {
-//                    elemPos = elem.position().top;
-//                }
-//                $(window).scrollTop(elemPos - 110);
-//
-//                $('.manual').scrollTop(0);
 
                 $('html').click(function (e) {
                     var clickedElem = $(e.target);

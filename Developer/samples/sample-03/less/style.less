@@ -1,11 +1,9 @@
 // There is a path to Startup framework
 @startup-basePath: "../../../";
 
-@import '@{startup-basePath}flat-ui/less/config.less';
+@import '@{startup-basePath}flat-ui/less/variables.less';
 @import '@{startup-basePath}flat-ui/less/mixins.less';
-/*only fo flat-ui free*/
-@import '@{startup-basePath}common-files/less/flat-ui-free2.0.0-fix.less';
-/* end only for flat-ui free*/
+
 @import '@{startup-basePath}common-files/less/mixins.less';
 @import '@{startup-basePath}common-files/less/common.less';
 @import '@{startup-basePath}common-files/less/navbar.less';
@@ -33,7 +31,7 @@
 }
 .header-11-sub {
     h3 {
-        color:@h-text-color;
+        color:@text-color-heading;
     }
     p {
         color:#7f8c8d;
@@ -75,7 +73,7 @@
     }
     .lead {
         font-size: 25px;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         text-align: center;
         margin-bottom: 55px;
     }

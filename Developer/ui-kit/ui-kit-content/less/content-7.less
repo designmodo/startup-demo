@@ -7,8 +7,8 @@
     position:relative;
     h3 {
         text-align: center;
-        .font(30px, @h-text-color);
-        font-family:@h-font-family;
+        .font(30px, @text-color-heading);
+        font-family:@font-family-demo;
         margin-bottom:80px;
         line-height: 42px;
         font-weight: 800;
@@ -24,7 +24,7 @@
         text-align: left;
     }
     h6 {
-        .font(18px, @danger);
+        .font(18px, @brand-danger);
         font-weight:500;
         margin-top:60px;
         text-transform: none;
@@ -35,9 +35,9 @@
             margin-top:20px
         }
     }
-    .row > .span3:first-child {
+    .row > .col-sm-3:first-child {
         .font(22px);
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         line-height: 32px;
         font-weight: 300;
     }
@@ -46,7 +46,7 @@
             padding-left: 0;
             padding-right: 0;
         }
-        .row >[class*="span"] {
+        .row >[class*="col-sm-"] {
             margin-top: 45px;
             &:first-child {
                 margin-top: 0;

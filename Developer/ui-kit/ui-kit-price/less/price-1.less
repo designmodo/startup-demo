@@ -38,14 +38,14 @@
             }
         }
         .btn {
-            min-width: 150px;
+            min-width: 170px;
         }
     }
     .ribbon {
         position: absolute;
         right: -3px;
         top: 26px;
-        @media (max-width: 979px) {
+        @media (max-width: 991px) {
             & {
                 top: 4px;
             }
@@ -57,9 +57,9 @@
     @media (max-width: 767px) {
         .plan {
             margin-top: 30px;
-            &:first-child {
-                margin-top: 0;
-            }
+        }
+        & .col-sm-4:first-child .plan{
+            margin-top: 0;
         }
     }
 }

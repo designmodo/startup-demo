@@ -14,34 +14,10 @@
         z-index: 2;
         top: 0;
         margin: 0;
-        &.navbar-fixed-top {
-            position:fixed;
-            margin:0 auto;
-            top:0 !important;
-        }
-        .navbar-form, .navbar-search {
-            margin: 0;
-            padding: 20px 0 19px 60px;
-        }
-        .btn, .btn-group {
-            margin-top: -1px;
-        }
-        .btn {
-            padding-left: 26px;
-            padding-right: 26px;
-            &.btn-primary {
-                .font(15px, white);
-                font-weight:500;
-            }
-        }
-        .navbar-inner {
-            background: none;
-        }
         .brand {
-            padding-left: 0;
             padding-top: 25px;
             .font(25px, white);
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             font-weight: 600;
             img:first-child {
                 float: left;
@@ -65,34 +41,19 @@
                 }
             }
         }
-        .btn-navbar {
-            margin: 36px 0 17px;
-            padding: 0;
-            .border-radius(0);
-            border: 0;
-            background: none!important;
-            color: white;
-            &:hover, &:focus {
-                color: @silver;
-            }
-            &:active, &.active {
-                color: darken(@silver, 20%);
+        .navbar-form {
+            padding: 19px 0 19px 60px;
+        }
+        .btn {
+            padding-left: 26px;
+            padding-right: 26px;
+            &.btn-info {
+                .font(15px, white);
+                font-weight:500;
             }
         }
-        @media (max-width: 979px) {
-            .nav-collapse {
-                padding-top: 17px;
-                .navbar-collapse;
-            }
-            .btn-navbar{
-                &:before{
-                  content:'';
-                  display: block;
-                  background-image: url("@{startup-basePath}common-files/icons/menu-icon.png");
-                  width: 17px;
-                  height: 12px;
-                }
-            }
+        .navbar-toggle {
+            margin-top: 30px;
         }
     }
 }
@@ -108,19 +69,19 @@
         h1 {
             margin: 0 0 30px;
             .font(45px, white);
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             font-weight:300;
         }
         p {
             .font(25px, @silver);
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             font-weight:300;
             .line-height(37.5px);
         }
         @media (max-width: 480px) {
             h1 {
                 .font(36px, white);
-                font-family: @h-font-family;
+                font-family: @font-family-demo;
                 font-weight:300;
             }
             p {
@@ -134,7 +95,7 @@
         h1 {
             .font(46px, white);
             font-weight: 500;
-            font-family: @h-font-family;
+            font-family: @font-family-demo;
             border: 8px solid white;
             display: inline-block;
             margin: 0;

@@ -14,6 +14,7 @@
         ul {
             list-style: none;
             margin: 0;
+            padding: 0;
             .font(16px, @silver);
             li {
                 float: left;
@@ -41,8 +42,8 @@
             }
             > * {
                 display: block;
-              top: 0;
                 position: relative;
+                top: 0;
                 .transition(0.25s top);
                 &:first-child {
                     color: @silver;
@@ -56,7 +57,7 @@
     .additional-links {
         .font(12px, @silver);
         text-align: center;
-        @media (max-width: 979px) {
+        @media (max-width: 991px) {
             clear: both;
             text-align: left;
         }
@@ -68,7 +69,7 @@
         padding-top: 28px;
         padding-bottom: 28px;
         > .container > * {
-            float: none;
+            float: none !important;
             .clearfix();
         }
         nav ul li {

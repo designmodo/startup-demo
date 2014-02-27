@@ -1,11 +1,9 @@
 // There is a path to Startup framework
 @startup-basePath: "../../../";
 
-@import '@{startup-basePath}flat-ui/less/config.less';
+@import '@{startup-basePath}flat-ui/less/variables.less';
 @import '@{startup-basePath}flat-ui/less/mixins.less';
-/*only fo flat-ui free*/
-@import '@{startup-basePath}common-files/less/flat-ui-free2.0.0-fix.less';
-/* end only for flat-ui free*/
+
 @import '@{startup-basePath}common-files/less/mixins.less';
 @import '@{startup-basePath}common-files/less/common.less';
 @import '@{startup-basePath}common-files/less/helper.less';
@@ -16,10 +14,9 @@
 
 
   //-- start samples of footer--------------------------------------------------
-
 @import "footer-2";
 @import "footer-3";
-
+@import '../../ui-kit-demo/less/demo.less';
 //-- end samples of footer----------------------------------------------------
 
 body .delimiter-big {
