@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../flat-ui/images/favicon.ico">
     <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap-responsive.css">
     <link rel="stylesheet" href="../../flat-ui/css/flat-ui.css">
     <!-- Using only with Flat-UI (free)-->
     <link rel="stylesheet" href="../../common-files/css/icon-font.css">
@@ -20,13 +19,13 @@
       <menu class="main-menu">
         <div class="container">
           <div class="row">
-            <a href="index.html" class="man-brand span3">
+            <a href="index.html" class="man-brand col-sm-3">
               <span class="logotype">Startup</span>
               <span class="doc-title">user manual</span>
             </a>
             <button id="open-close-menu" class="menu-btn btn-inverse"><span class="fui-list"></span>
             </button>
-            <dl class="span8">
+            <dl class="col-sm-8">
               <dd><a class="active">overview</a>
               </dd>
               <dd><a href="how_to_install.html">how to install</a>
@@ -42,8 +41,8 @@
       <menu class="sub-menu">
         <div class="container">
           <div class="row">
-            <span class="sm-title span3">components</span>
-            <dl class="span9">
+            <span class="sm-title col-sm-3">components</span>
+            <dl class="col-sm-9">
               <dd><a href="headers.html">Header</a>
               </dd>
               <dd><a href="contents.html">Content 1</a>
@@ -64,7 +63,7 @@
             <dl>
               <dd><a href="headers.html">Header</a>
               </dd>
-              <dd><a href="contents.html">Content 1</a>
+              <dd><a href="contents.html">Content1</a>
               </dd>
               <dd><a class="active" href="contents2.html">Content 2</a>
               </dd>
@@ -84,56 +83,58 @@
       </menu>
     </nav>
     <div class="mcontent">
-      <!-- demo sections-->
-      <!-- content-23 -->
-      <button class="read-man" id="content-23">
-        ?
-      </button>
-      <div class="content-23 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="content-23 v-center bg-midnight-blue">
-        <div>
+      <div class="page-wrapper">
+        <!-- demo sections-->
+        <!-- content-23 -->
+        <button class="read-man" id="content-23">
+          ?
+        </button>
+        <div class="content-23 mask">
           <div class="container">
-            <div class="hero-unit hero-unit-bordered">
-              <h1>Made in New York</h1>
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
-        <a class="control-btn fui-arrow-down" href="#"></a>
-      </section>
-      <div class="delimiter">
+        <section class="content-23 v-center bg-midnight-blue">
+          <div>
+            <div class="container">
+              <div class="hero-unit hero-unit-bordered">
+                <h1>Made in New York</h1>
+              </div>
+            </div>
+          </div>
+          <a class="control-btn fui-arrow-down" href="#"></a>
+        </section>
+        <div class="delimiter">
+        </div>
+        <!-- demo -->
+        <section class="demo">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 img">
+                <img src="../../common-files/icons/demo.gif" width="48" height="48" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <h3>We have a full version of Startup Framework</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3 centered">
+                <p>
+                  You will find there all the components and blocks you can use for creating a website.
+                </p>
+                <a href="http://designmodo.com/startup/?utm_source=demo&utm_medium=demo&utm_campaign=demo" class="btn">Watch the Presentation</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="delimiter-big"></div>
       </div>
-      <!-- demo -->
-      <section class="demo">
-        <div class="container">
-          <div class="row">
-            <div class="span12 img">
-              <img src="../../common-files/icons/demo.gif" width="48" height="48" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="span12">
-              <h3>We have a full version of Startup Framework</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="span6 offset3 centered">
-              <p>
-                You will find there all the components and blocks you can use for creating a website.
-              </p>
-              <a href="http://designmodo.com/startup/?utm_source=demo&utm_medium=demo&utm_campaign=demo" class="btn">Watch the Presentation</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="delimiter-big"></div>
       <!-- manual sections -->
       <div class="manual">
         <a href="index.html" class="man-brand"> <span class="logotype">Startup</span>  <span class="doc-title">user manual</span>
@@ -200,6 +201,7 @@ Copy the same code as in css versionand paste it in your '<strong>.less</strong>
                   <br/>
                   <a href="../../samples/sample-04/index.html" class="inner-link" target="_blank">sample # 4</a>
                   <br/>
+                  <a href="../../samples/sample-23/index.html" class="inner-link" target="_blank">sample # 23</a>
                 </p>
               </li>
             </ol>

@@ -1,0 +1,49 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+// Body reset
+// -------------------------
+
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  background-color: @body-bg;
+}
+
+// Links
+// -------------------------
+
+a {
+  color: @link-color;
+  text-decoration: none;
+  .transition(.25s);
+    
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: none;
+  }
+  &:focus {
+	  outline: none;
+  }
+}
+
+// Images
+// -------------------------
+
+// Rounded corners
+.img-rounded {
+  border-radius: @border-radius-large;
+}
+
+// Description text under image
+.img-comment {
+  font-size: ceil(@font-size-base * 0.8333); // ~15px
+  line-height: 1.2;
+  font-style: italic;
+  margin: 24px 0;
+}

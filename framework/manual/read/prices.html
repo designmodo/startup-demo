@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../flat-ui/images/favicon.ico">
     <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap-responsive.css">
     <link rel="stylesheet" href="../../flat-ui/css/flat-ui.css">
     <!-- Using only with Flat-UI (free)-->
     <link rel="stylesheet" href="../../common-files/css/icon-font.css">
@@ -20,13 +19,13 @@
       <menu class="main-menu">
         <div class="container">
           <div class="row">
-            <a href="index.html" class="man-brand span3">
+            <a href="index.html" class="man-brand col-sm-3">
               <span class="logotype">Startup</span>
               <span class="doc-title">user manual</span>
             </a>
             <button id="open-close-menu" class="menu-btn btn-inverse"><span class="fui-list"></span>
             </button>
-            <dl class="span8 ">
+            <dl class="col-sm-8 ">
               <dd><a class="active">overview</a>
               </dd>
               <dd><a href="how_to_install.html">how to install</a>
@@ -42,8 +41,8 @@
       <menu class="sub-menu">
         <div class="container">
           <div class="row">
-            <span class="sm-title span3">components</span>
-            <dl class="span9">
+            <span class="sm-title col-sm-3">components</span>
+            <dl class="col-sm-9">
               <dd><a href="headers.html">Header</a>
               </dd>
               <dd><a href="contents.html">Content 1</a>
@@ -84,90 +83,98 @@
       </menu>
     </nav>
     <div class="mcontent">
-      <!-- demo sections -->
-      <!-- price-1 -->
-      <button class="read-man" id="price-1">
-        ?
-      </button>
-      <div class="price-1 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
+      <div class="page-wrapper">
+        <!-- demo sections -->
+        <!-- price-1 -->
+        <button class="read-man" id="price-1">
+          ?
+        </button>
+        <div class="price-1 mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
+        <section class="price-1">
+          <div class="container">
+            <div class="row plans">
+              <div class="col-sm-4">
+                <div class="plan">
+                  <div class="title">Starter</div>
+                  <div class="price">19$/month</div>
+                  <div class="description">
+                    10,000 messages
+                    <br>
+                    <b>unlimited</b> data
+                    <br>
+                    <b>unlimited</b> users
+                    <br>first 10 day free
+                  </div>
+                  <a class="btn disabled" href="#">Your Current Plan</a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="plan">
+                  <div class="title">Professional</div>
+                  <div class="price">39$/month</div>
+                  <div class="description">
+                    10,000 messages
+                    <br>
+                    <b>unlimited</b> data
+                    <br>
+                    <b>unlimited</b> users
+                    <br>first 30 day free
+                  </div>
+                  <a class="btn btn-primary" href="#">Change to this Plan</a>
+                  <div class="ribbon">NEW</div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="plan">
+                  <div class="title">Business</div>
+                  <div class="price">59$/month</div>
+                  <div class="description">
+                    10,000 messages
+                    <br>
+                    <b>unlimited</b> data
+                    <br>
+                    <b>unlimited</b> users
+                    <br>first 100 day free
+                  </div>
+                  <a class="btn btn-primary" href="#">Change to this Plan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/.container-->
+        </section>
+        <!-- demo -->
+        <section class="demo">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 img">
+                <img src="../../common-files/icons/demo.gif" width="48" height="48" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <h3>We have a full version of Startup Framework</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3 centered">
+                <p>
+                  You will find there all the components and blocks you can use for creating a website.
+                </p>
+                <a href="http://designmodo.com/startup/?utm_source=demo&utm_medium=demo&utm_campaign=demo" class="btn">Watch the Presentation</a>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <section class="price-1">
-        <div class="container">
-          <div class="row plans">
-            <div class="span4 plan">
-              <div class="title">Starter</div>
-              <div class="price">19$/month</div>
-              <div class="description">
-                10,000 messages
-                <br>
-                <b>unlimited</b> data
-                <br>
-                <b>unlimited</b> users
-                <br>first 10 day free
-              </div>
-              <a class="btn disabled" href="#">Your Current Plan</a>
-            </div>
-            <div class="span4 plan">
-              <div class="title">Professional</div>
-              <div class="price">39$/month</div>
-              <div class="description">
-                10,000 messages
-                <br>
-                <b>unlimited</b> data
-                <br>
-                <b>unlimited</b> users
-                <br>first 30 day free
-              </div>
-              <a class="btn btn-primary" href="#">Change to this Plan</a>
-              <div class="ribbon">NEW</div>
-            </div>
-            <div class="span4 plan">
-              <div class="title">Business</div>
-              <div class="price">59$/month</div>
-              <div class="description">
-                10,000 messages
-                <br>
-                <b>unlimited</b> data
-                <br>
-                <b>unlimited</b> users
-                <br>first 100 day free
-              </div>
-              <a class="btn btn-primary" href="#">Change to this Plan</a>
-            </div>
-          </div>
-        </div>
-        <!--/.container-->
-      </section>
-      <!-- demo -->
-      <section class="demo">
-        <div class="container">
-          <div class="row">
-            <div class="span12 img">
-              <img src="../../common-files/icons/demo.gif" width="48" height="48" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="span12">
-              <h3>We have a full version of Startup Framework</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="span6 offset3 centered">
-              <p>
-                You will find there all the components and blocks you can use for creating a website.
-              </p>
-              <a href="http://designmodo.com/startup/?utm_source=demo&utm_medium=demo&utm_campaign=demo" class="btn">Watch the Presentation</a>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- manual sections -->
       <div class="manual">
         <a href="index.html" class="man-brand"> <span class="logotype">Startup</span>  <span class="doc-title">user manual</span>
@@ -197,39 +204,45 @@
                 <pre class="language-markup"><code class="language-markup"><section class="price-1">
     <div class="container">
         <div class="row plans">
-            <div class="span4 plan">
-                <div class="title">Starter</div>
-                <div class="price">19$/month</div>
-                <div class="description">
-                    10,000 messages<br>
-                    <b>unlimited</b> data<br>
-                    <b>unlimited</b> users<br>
-                    first 10 day free
+            <div class="col-sm-4">
+                <div class="plan">
+                    <div class="title">Starter</div>
+                    <div class="price">19$/month</div>
+                    <div class="description">
+                        10,000 messages<br>
+                        <b>unlimited</b> data<br>
+                        <b>unlimited</b> users<br>
+                        first 10 day free
+                    </div>
+                    <a class="btn disabled" href="#">Your Current Plan</a>
                 </div>
-                <a class="btn disabled" href="#">Your Current Plan</a>
             </div>
-            <div class="span4 plan">
-                <div class="title">Professional</div>
-                <div class="price">39$/month</div>
-                <div class="description">
-                    10,000 messages<br>
-                    <b>unlimited</b> data<br>
-                    <b>unlimited</b> users<br>
-                    first 30 day free
+            <div class="col-sm-4">
+                <div class="plan">
+                    <div class="title">Professional</div>
+                    <div class="price">39$/month</div>
+                    <div class="description">
+                        10,000 messages<br>
+                        <b>unlimited</b> data<br>
+                        <b>unlimited</b> users<br>
+                        first 30 day free
+                    </div>
+                    <a class="btn btn-primary" href="#">Change to this Plan</a>
+                    <div class="ribbon">NEW</div>
                 </div>
-                <a class="btn btn-primary" href="#">Change to this Plan</a>
-                <div class="ribbon">NEW</div>
             </div>
-            <div class="span4 plan">
-                <div class="title">Business</div>
-                <div class="price">59$/month</div>
-                <div class="description">
-                    10,000 messages<br>
-                    <b>unlimited</b> data<br>
-                    <b>unlimited</b> users<br>
-                    first 100 day free
+            <div class="col-sm-4">
+                <div class="plan">
+                    <div class="title">Business</div>
+                    <div class="price">59$/month</div>
+                    <div class="description">
+                        10,000 messages<br>
+                        <b>unlimited</b> data<br>
+                        <b>unlimited</b> users<br>
+                        first 100 day free
+                    </div>
+                    <a class="btn btn-primary" href="#">Change to this Plan</a>
                 </div>
-                <a class="btn btn-primary" href="#">Change to this Plan</a>
             </div>
         </div>
     </div>
@@ -273,6 +286,10 @@ before the closing tag of the product title <code class="language-markup">&lt;di
                   You can see it in next samples:
                   <br/>
                   <a href="../../samples/sample-03/index.html" class="inner-link" target="_blank">sample # 3</a>
+                  <br/>
+                  <a href="../../samples/sample-09/index.html" class="inner-link" target="_blank">sample # 9</a>
+                  <br/>
+                  <a href="../../samples/sample-17/index.html" class="inner-link" target="_blank">sample # 17</a>
                 </p>
               </li>
             </ol>

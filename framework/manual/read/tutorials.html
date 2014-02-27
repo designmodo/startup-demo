@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../flat-ui/images/favicon.ico">
     <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap-responsive.css">
     <link rel="stylesheet" href="../../flat-ui/css/flat-ui.css">
     <!-- Using only with Flat-UI (free)-->
     <link rel="stylesheet" href="../../common-files/css/icon-font.css">
@@ -20,13 +19,13 @@
       <menu class="main-menu">
         <div class="container">
           <div class="row">
-            <a href="index.html" class="man-brand span3">
+            <a href="index.html" class="man-brand col-sm-3">
               <span class="logotype">Startup</span>
               <span class="doc-title">user manual</span>
             </a>
             <button id="open-close-menu" class="menu-btn btn-inverse"><span class="fui-list"></span>
             </button>
-            <dl class="span8">
+            <dl class="col-sm-8">
               <dd><a href="index.html">overview</a>
               </dd>
               <dd><a href="how_to_install.html">how to install</a>
@@ -63,15 +62,40 @@
           </dl>
       </menu>
     </nav>
-    <section class="manual-pages">
-      <div class="container">
-        <div class="row">
-          <div class="span9">
-            <h1>Video Tutorials will be available soon.</h1>
+    <div class="page-wrapper">
+      <section class="manual-pages">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>Video Tutorials</h1>
+              <p>You can find the latest video tutorials on our <a target="_blank" href="https://www.youtube.com/playlist?list=PLVOyEePsdd5K06AFNaqm4yDDVp_3re-K3">youtube channel</a>.</p>
+              <div class="row tutorial">
+                <div class="col-sm-8">
+                  <div class="player">
+                    <iframe id="pPlayer" src="http://www.youtube.com/embed/ZDZbbzWBmig" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <h2>Part 1: <a target="_blank" href="http://www.youtube.com/watch?v=ZDZbbzWBmig">Content and Components Review</a></h2>
+                  <p>This video shows you how to get started and takes you through the process of using the framework. This video will take you through everything from downloading the tools to using the styles and pieces in the block design format.</p>
+                </div>
+              </div>
+              <div class="row tutorial">
+                <div class="col-sm-8">
+                  <div class="player">
+                    <iframe id="pPlayer" src="http://www.youtube.com/embed/OsRY7b6avKw" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <h2>Part 2: <a target="_blank" href="http://www.youtube.com/watch?v=OsRY7b6avKw">How to Start and Create Website with Startup Design Framework</a></h2>
+                  <p>How to stack several blocks together in Startup Framework to make a website.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../../flat-ui/js/bootstrap.min.js"></script>
     <script src="../../common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>

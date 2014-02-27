@@ -9,7 +9,7 @@
     h3 {
         text-align: center;
         .font(30px, @base);
-        font-family:@h-font-family;
+        font-family:@font-family-demo;
         margin:70px 0 35px;
     }
     p {
@@ -19,19 +19,19 @@
     .btn.btn-clear {
         .box-sizing(border-box);
         background: none;
-        border: 2px solid @danger;
+        border: 2px solid @brand-danger;
         .font(14px);
         font-weight: 500;
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         padding: 12px 28px 12px;
-        color: @danger;
+        color: @brand-danger;
         &:hover, &:focus {
-            background: @danger;
+            background: @brand-danger;
             color: #fff;
         }
         &:active, &.active {
-            border-color: @button-danger-active;
-            background: @button-danger-active;
+            border-color: @btn-danger-active-bg;
+            background: @btn-danger-active-bg;
             color: rgba(255, 255, 255, 0.75);
         }
     }

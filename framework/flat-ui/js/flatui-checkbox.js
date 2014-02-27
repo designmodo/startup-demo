@@ -1,5 +1,5 @@
 /* =============================================================
- * flatui-checkbox.js v0.0.2
+ * flatui-checkbox v0.0.3
  * ============================================================ */
  
 !function ($) {
@@ -39,7 +39,7 @@
         , e = $.Event('toggle')
       
       if ($el.prop('disabled') == false) {
-        $parent.toggleClass(ch) && checked ? $el.removeAttr(ch) : $el.attr(ch, true);
+        $parent.toggleClass(ch) && checked ? $el.removeAttr(ch) : $el.prop(ch, ch);
         $el.trigger(e).trigger('change'); 
       }
     }  
@@ -52,7 +52,7 @@
         , checkAction = option == 'check' ? true : false
         , e = $.Event(option)
       
-      $parent[checkAction ? 'addClass' : 'removeClass' ](ch) && checkAction ? $el.attr(ch, true) : $el.removeAttr(ch);
+      $parent[checkAction ? 'addClass' : 'removeClass' ](ch) && checkAction ? $el.prop(ch, ch) : $el.removeAttr(ch);
       $el.trigger(e).trigger('change');       
     }  
       
@@ -93,18 +93,20 @@
  /* CHECKBOX DATA-API
   * =============== */
 
-  $(document).on('click.checkbox.data-api', '[data-toggle^=checkbox], .checkbox', function (e) {
-    var $checkbox = $(e.target);
-    e && e.preventDefault() && e.stopPropagation();
-    if (!$checkbox.hasClass('checkbox')) $checkbox = $checkbox.closest('.checkbox');
-    $checkbox.find(':checkbox').checkbox('toggle');
-  });
-  
-  $(window).on('load', function () {
-    $('[data-toggle="checkbox"]').each(function () {
-      var $checkbox = $(this);
-      $checkbox.checkbox();
-    });
-  });
+	$(document).on('click.checkbox.data-api', '[data-toggle^=checkbox], .checkbox', function (e) {
+	  var $checkbox = $(e.target);
+		if (e.target.tagName != "A") {			
+			e && e.preventDefault() && e.stopPropagation();
+			if (!$checkbox.hasClass('checkbox')) $checkbox = $checkbox.closest('.checkbox');
+			$checkbox.find(':checkbox').checkbox('toggle');
+		}
+	});
+	
+	$(function () {
+		$('[data-toggle="checkbox"]').each(function () {
+			var $checkbox = $(this);
+			$checkbox.checkbox();
+		});
+	});
 
 }(window.jQuery);

@@ -3,6 +3,10 @@
  * */
  .footer-3 {
     .v-center;
+    .row.v-center {
+        padding-left: 0;
+        padding-right: 0;
+    }
     font-size: 14px;
     padding-top: 65px;
     padding-bottom: 65px;
@@ -17,7 +21,7 @@
     }
     .brand {
         .font(25px, white);
-        font-family: @h-font-family;
+        font-family: @font-family-demo;
         font-weight: 500;
     }
     .additional-links a {
@@ -34,7 +38,7 @@
         line-height: 1.6;
     }
     @media (max-width: 767px) {
-        .row >[class*="span"] {
+        .row >[class*="col-sm-"] {
             margin-top: 30px;
             &:first-child {
                 margin-top: 0;

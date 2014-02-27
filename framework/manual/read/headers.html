@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../flat-ui/images/favicon.ico">
     <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../../flat-ui/bootstrap/css/bootstrap-responsive.css">
     <link rel="stylesheet" href="../../flat-ui/css/flat-ui.css">
     <!-- Using only with Flat-UI (free)-->
     <link rel="stylesheet" href="../../common-files/css/icon-font.css">
@@ -20,13 +19,13 @@
       <menu class="main-menu">
         <div class="container">
           <div class="row">
-            <a href="index.html" class="man-brand span3">
+            <a href="index.html" class="man-brand col-sm-3">
               <span class="logotype">Startup</span>
               <span class="doc-title">user manual</span>
             </a>
             <button id="open-close-menu" class="menu-btn btn-inverse"><span class="fui-list"></span>
             </button>
-            <dl class="span8">
+            <dl class="col-sm-8">
               <dd><a class="active">overview</a>
               </dd>
               <dd><a href="how_to_install.html">how to install</a>
@@ -42,8 +41,8 @@
       <menu class="sub-menu">
         <div class="container">
           <div class="row">
-            <span class="sm-title span3">components</span>
-            <dl class="span9">
+            <span class="sm-title col-sm-3">components</span>
+            <dl class="col-sm-9">
               <dd><a class="active" href="headers.html">Header</a>
               </dd>
               <dd><a href="contents.html">Content 1</a>
@@ -84,166 +83,167 @@
       </menu>
     </nav>
     <div class="mcontent">
-      <!-- demo sections-->
-      <!-- header-10 -->
-      <button class="read-man" id="header-10">
-        ?
-      </button>
-      <div class="header-10 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <header class="header-10">
-        <div class="container">
-          <div class="navbar span12">
-            <div class="navbar-inner">
-              <button type="button" class="btn btn-navbar nav-pull-left"></button>
-              <a class="brand" href="#">Startup</a>
-              <div class="nav-collapse collapse pull-right">
-                <ul class="nav">
-                  <li class="active"><a href="#">Home</a>
-                  </li>
-                  <li><a href="#">Account</a>
-                  </li>
-                  <li><a href="#">Blog</a>
-                  </li>
-                  <li><a href="#">Contact</a>
-                  </li>
-                </ul>
-                <form class="navbar-form pull-left">
-                  <a class="btn btn-info" href="#">Buy Now</a>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <section class="header-10-sub v-center bg-midnight-blue">
-        <div class="background">&nbsp;</div>
-        <div>
+      <div class="page-wrapper">
+        <!-- demo sections-->
+        <!-- header-10 -->
+        <button class="read-man" id="header-10">
+          ?
+        </button>
+        <div class="header-10 mask">
           <div class="container">
-            <div class="hero-unit">
-              <h1>Startup Framework is a set of components</h1>
-              <p>
-                We’ve created the product that will help your
-                <br/>startup to look even better.
-              </p>
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
-        <a class="control-btn fui-arrow-down" href="#"></a>
-      </section>
-      <div class="delimiter"></div>
-      <!-- header-11 -->
-      <button class="read-man" id="header-11">
-        ?
-      </button>
-      <div class="header-11 mask">
-        <div class="container">
-          <div class="hover-text">
-            <div class="hu-border"><span>?</span>
-              <h1>HOW TO USE THIS BLOCK</h1>
+        <header class="header-10">
+          <div class="container">
+            <div class="row">
+              <div class="navbar col-sm-12" role="navigation">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle"></button>
+                  <a class="brand" href="#">Startup</a>
+                </div>
+                <div class="collapse navbar-collapse pull-right">
+                  <ul class="nav pull-left">
+                    <li class="active"><a href="#">Home</a>
+                    </li>
+                    <li><a href="#">Account</a>
+                    </li>
+                    <li><a href="#">Blog</a>
+                    </li>
+                    <li><a href="#">Contact</a>
+                    </li>
+                  </ul>
+                  <form class="navbar-form pull-left">
+                    <a class="btn btn-info" href="#">Buy Now</a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="header-10-sub v-center bg-midnight-blue">
+          <div class="background">&nbsp;</div>
+          <div>
+            <div class="container">
+              <div class="hero-unit">
+                <h1>Startup Framework is a set of components</h1>
+                <p>We’ve created the product that will help your
+                  <br/>startup to look even better.</p>
+              </div>
+            </div>
+          </div>
+          <a class="control-btn fui-arrow-down" href="#"></a>
+        </section>
+        <div class="delimiter"></div>
+        <!-- header-11 -->
+        <button class="read-man" id="header-11">
+          ?
+        </button>
+        <div class="header-11 mask">
+          <div class="container">
+            <div class="hover-text">
+              <div class="hu-border"><span>?</span>
+                <h1>HOW TO USE THIS BLOCK</h1>
+              </div>
             </div>
           </div>
         </div>
+        <header class="header-11 hidden">
+          <div class="container">
+            <div class="row">
+              <div class="navbar col-sm-12" role="navigation">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle"></button>
+                  <a class="brand" href="#">
+                    <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup</a>
+                </div>
+                <div class="collapse navbar-collapse pull-right">
+                  <ul class="nav pull-left">
+                    <li class="active"><a href="#">HOME</a>
+                    </li>
+                    <li><a href="#">COMPANY</a>
+                    </li>
+                    <li><a href="#">PORTFOLIO</a>
+                    </li>
+                    <li><a href="#">BLOG</a>
+                    </li>
+                    <li><a href="#">CONTACT</a>
+                    </li>
+                  </ul>
+                  <form class="navbar-form pull-left">
+                    <a class="btn btn-primary" href="#">SIGN IN</a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="header-11-sub bg-midnight-blue">
+          <div class="background">&nbsp;</div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>Features of Startup Framework</h3>
+                <p>You have the design, you have the code. We’ve created the product that will help your startup to look even better.</p>
+                <div class="signup-form">
+                  <form>
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="Your E-mail">
+                    </div>
+                    <div class="form-group">
+                      <div>
+                        <input type="password" class="form-control" placeholder="Password">
+                      </div>
+                      <div>
+                        <input type="password" class="form-control" placeholder="Confirmation">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-block btn-info">Sign Up</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="additional-links">By signing up you agree to <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+                </div>
+              </div>
+              <div class="col-sm-7 col-sm-offset-1 player-wrapper">
+                <div class="player">
+                  <iframe id="pPlayer" src="http://player.vimeo.com/video/80282064?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=pPlayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="delimiter"></div>
+        <!-- demo -->
+        <section class="demo">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 img">
+                <img src="../../common-files/icons/demo.gif" width="48" height="48" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <h3>We have a full version of Startup Framework</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3 centered">
+                <p>
+                  You will find there all the components and blocks you can use for creating a website.
+                </p>
+                <a href="http://designmodo.com/startup/?utm_source=demo&utm_medium=demo&utm_campaign=demo" class="btn">Watch the Presentation</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="delimiter-big"></div>
       </div>
-      <header class="header-11 hidden">
-        <div class="container">
-          <div class="navbar span12">
-            <div class="navbar-inner">
-              <button type="button" class="btn btn-navbar"></button>
-              <a class="brand" href="#">
-                <img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt="">Startup</a>
-              <div class="nav-collapse collapse pull-right">
-                <ul class="nav">
-                  <li class="active"><a href="#">HOME</a>
-                  </li>
-                  <li><a href="#">COMPANY</a>
-                  </li>
-                  <li><a href="#">PORTFOLIO</a>
-                  </li>
-                  <li><a href="#">BLOG</a>
-                  </li>
-                  <li><a href="#">CONTACT</a>
-                  </li>
-                </ul>
-                <form class="navbar-form pull-left">
-                  <a class="btn btn-primary" href="#">SIGN IN</a>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <section class="header-11-sub bg-midnight-blue">
-        <div class="background">&nbsp;</div>
-        <div class="container">
-          <div class="row">
-            <div class="span4">
-              <h3>Features of Startup Framework</h3>
-              <p>
-                You have the design, you have the code. We’ve created the product that will help your startup to look even better.
-              </p>
-              <div class="signup-form">
-                <form>
-                  <div class="controls controls-row">
-                    <input class="span4" type="text" placeholder="Your E-mail">
-                  </div>
-                  <div class="controls controls-row">
-                    <div>
-                      <input type="password" placeholder="Password">
-                    </div>
-                    <div>
-                      <input type="password" placeholder="Confirmation">
-                    </div>
-                  </div>
-                  <div class="controls controls-row">
-                    <button type="submit" class="btn btn-block btn-info">Sign Up</button>
-                  </div>
-                </form>
-              </div>
-              <div class="additional-links">
-                By signin up you agree to <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-              </div>
-            </div>
-            <div class="span7 offset1 player-wrapper">
-              <div class="player">
-                <iframe id="pPlayer" src="http://player.vimeo.com/video/80282064?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=pPlayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="delimiter"></div>
-      <!-- demo -->
-      <section class="demo">
-        <div class="container">
-          <div class="row">
-            <div class="span12 img">
-              <img src="../../common-files/icons/demo.gif" width="48" height="48" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="span12">
-              <h3>We have a full version of Startup Framework</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="span6 offset3 centered">
-              <p>
-                You will find there all the components and blocks you can use for creating a website.
-              </p>
-              <a href="http://designmodo.com/startup/?utm_source=demo&utm_medium=demo&utm_campaign=demo" class="btn">Watch the Presentation</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="delimiter-big"></div>
       <!-- manual sections -->
       <div class="manual">
         <a href="index.html" class="man-brand"> <span class="logotype">Startup</span>  <span class="doc-title">user manual</span>
@@ -273,12 +273,14 @@
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-10">
     <div class="container">
-        <div class="navbar span12">
-            <div class="navbar-inner">
-                <button type="button" class="btn btn-navbar nav-pull-left"></button>
-                <a class="brand" href="#">Startup</a>
-                <div class="nav-collapse collapse pull-right">
-                    <ul class="nav">
+        <div class="row">
+            <div class="navbar col-sm-12" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"></button>
+                    <a class="brand" href="#">Startup</a>
+                </div>
+                <div class="collapse navbar-collapse pull-right">
+                    <ul class="nav pull-left">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">Account</a></li>
                         <li><a href="#">Blog</a></li>
@@ -298,10 +300,7 @@
         <div class="container">
             <div class="hero-unit">
                 <h1>Startup Framework is a set of components</h1>
-                <p>
-                    We’ve created the product that will help your<br/>
-                    startup to look even better.
-                </p>
+                <p>We’ve created the product that will help your<br/> startup to look even better.</p>
             </div>
         </div>
     </div>
@@ -346,7 +345,7 @@
                 </p>
                 <hr/>
                 <p>
-                  You can see it in <a href="../../samples/sample-04/index.html" class="inner-link" target="_blank">sample # 4</a>
+                  You can see it in <a href="../../samples/sample-04/index.html" class="inner-link" target="_blank">sample # 4</a> and <a href="../../samples/sample-18/index.html" class="inner-link" target="_blank">sample # 18</a>
                 </p>
               </li>
             </ol>
@@ -378,13 +377,14 @@
                 </p>
                 <pre class="language-markup"><code class="language-markup"><header class="header-11 hidden">
     <div class="container">
-        <div class="navbar span12">
-            <div class="navbar-inner">
-                <button type="button" class="btn btn-navbar"></button>
-                <a class="brand" href="#"><img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50"
-                                               alt=""> Startup</a>
-                <div class="nav-collapse collapse pull-right">
-                    <ul class="nav">
+        <div class="row">
+            <div class="navbar col-sm-12" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"></button>
+                    <a class="brand" href="#"><img src="../../common-files/icons/Infinity-Loop@2x.png" width="50" height="50" alt=""> Startup</a>
+                </div>
+                <div class="collapse navbar-collapse pull-right">
+                    <ul class="nav pull-left">
                         <li class="active"><a href="#">HOME</a></li>
                         <li><a href="#">COMPANY</a></li>
                         <li><a href="#">PORTFOLIO</a></li>
@@ -403,35 +403,30 @@
     <div class="background">&nbsp;</div>
     <div class="container">
         <div class="row">
-            <div class="span4">
+            <div class="col-sm-4">
                 <h3>Features of Startup Framework</h3>
-                <p>
-                    You have the design, you have the code. We’ve created the product that will help your startup to
-                    look even better.
-                </p>
+                <p>You have the design, you have the code. We’ve created the product that will help your startup to look even better.</p>
                 <div class="signup-form">
                     <form>
-                        <div class="controls controls-row">
-                            <input class="span4" type="text" placeholder="Your E-mail">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Your E-mail">
                         </div>
-                        <div class="controls controls-row">
+                        <div class="form-group">
                             <div>
-                                <input type="password" placeholder="Password">
+                                <input type="password" class="form-control" placeholder="Password">
                             </div>
                             <div>
-                                <input type="password" placeholder="Confirmation">
+                                <input type="password" class="form-control" placeholder="Confirmation">
                             </div>
                         </div>
-                        <div class="controls controls-row">
+                        <div class="form-group">
                             <button type="submit" class="btn btn-block btn-info">Sign Up</button>
                         </div>
-                    </form>
+                     </form>
                 </div>
-                <div class="additional-links">
-                    By signin up you agree to <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-                </div>
+                <div class="additional-links">By signing up you agree to <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></div>
             </div>
-            <div class="span7 offset1 player-wrapper">
+            <div class="col-sm-7 col-sm-offset-1 player-wrapper">
                 <div class="player">
                     <iframe id="pPlayer"
                             src="http://player.vimeo.com/video/80282064?title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;player_id=pPlayer"
